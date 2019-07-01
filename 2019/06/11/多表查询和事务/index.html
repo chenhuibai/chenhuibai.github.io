@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>幽@静</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="重置MySQL的密码重置MySQL的密码步骤第一步：停止MySQL的服务![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image1.png){width=”5.0625in” height=”6.322916666666667in”} 第二步：在cmd下启动MySQL服务![](C:\Users\86159\Desktop\新建文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="幽@静">
+<meta property="og:url" content="http://yoursite.com/2019/06/11/多表查询和事务/index.html">
+<meta property="og:site_name" content="幽@静">
+<meta property="og:description" content="重置MySQL的密码重置MySQL的密码步骤第一步：停止MySQL的服务![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image1.png){width=”5.0625in” height=”6.322916666666667in”} 第二步：在cmd下启动MySQL服务![](C:\Users\86159\Desktop\新建文">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-11T04:22:34.529Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="幽@静">
+<meta name="twitter:description" content="重置MySQL的密码重置MySQL的密码步骤第一步：停止MySQL的服务![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image1.png){width=”5.0625in” height=”6.322916666666667in”} 第二步：在cmd下启动MySQL服务![](C:\Users\86159\Desktop\新建文">
+  
+    <link rel="alternate" href="/atom.xml" title="幽@静" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">幽@静</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-多表查询和事务" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/11/多表查询和事务/" class="article-date">
+  <time datetime="2019-06-11T15:17:33.071Z" itemprop="datePublished">2019-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="重置MySQL的密码"><a href="#重置MySQL的密码" class="headerlink" title="重置MySQL的密码"></a>重置MySQL的密码</h2><h3 id="重置MySQL的密码步骤"><a href="#重置MySQL的密码步骤" class="headerlink" title="重置MySQL的密码步骤"></a>重置MySQL的密码步骤</h3><h4 id="第一步：停止MySQL的服务"><a href="#第一步：停止MySQL的服务" class="headerlink" title="第一步：停止MySQL的服务"></a>第一步：停止MySQL的服务</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image1.png){width=”5.0625in” height=”6.322916666666667in”}</p>
+<h4 id="第二步：在cmd下启动MySQL服务"><a href="#第二步：在cmd下启动MySQL服务" class="headerlink" title="第二步：在cmd下启动MySQL服务"></a>第二步：在cmd下启动MySQL服务</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image2.png){width=”5.768055555555556in” height=”1.8527777777777779in”}</p>
+<h4 id="第三步：重新开启cmd的命令行"><a href="#第三步：重新开启cmd的命令行" class="headerlink" title="第三步：重新开启cmd的命令行"></a>第三步：重新开启cmd的命令行</h4><p>登录MySQL，不需要输入密码</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image3.png){width=”5.768055555555556in” height=”2.2131944444444445in”}</p>
+<h4 id="第四步：修改root的密码"><a href="#第四步：修改root的密码" class="headerlink" title="第四步：修改root的密码"></a>第四步：修改root的密码</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image4.png){width=”5.768055555555556in” height=”0.8111111111111111in”}</p>
+<h4 id="第五步：结束mysqld的进程"><a href="#第五步：结束mysqld的进程" class="headerlink" title="第五步：结束mysqld的进程"></a>第五步：结束mysqld的进程</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image5.png){width=”5.768055555555556in” height=”0.3402777777777778in”}</p>
+<h4 id="第六步：重新启动MySQL的服务"><a href="#第六步：重新启动MySQL的服务" class="headerlink" title="第六步：重新启动MySQL的服务"></a>第六步：重新启动MySQL的服务</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image6.png){width=”4.96875in” height=”6.166666666666667in”}</p>
+<h2 id="数据库的备份和还原"><a href="#数据库的备份和还原" class="headerlink" title="数据库的备份和还原"></a>数据库的备份和还原</h2><h3 id="数据库的备份"><a href="#数据库的备份" class="headerlink" title="数据库的备份"></a>数据库的备份</h3><h4 id="第一步：打开cmd的命令行窗口"><a href="#第一步：打开cmd的命令行窗口" class="headerlink" title="第一步：打开cmd的命令行窗口"></a>第一步：打开cmd的命令行窗口</h4><p>mysqldump -u root -p web_test1 &gt;C:/web_test1.sql</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image7.png){width=”5.768055555555556in” height=”0.48055555555555557in”}</p>
+<h3 id="数据库的还原"><a href="#数据库的还原" class="headerlink" title="数据库的还原"></a>数据库的还原</h3><h4 id="第一种还原方式："><a href="#第一种还原方式：" class="headerlink" title="第一种还原方式："></a>第一种还原方式：</h4><ul>
+<li><strong>第一步：在数据库服务器内部创建数据库：</strong></li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image8.png){width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
+<ul>
+<li><strong>第二步：在命令行窗口</strong></li>
+</ul>
+<p>mysql -u root -p web_test1 &lt; C:/web_test1.sql</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image9.png){width=”5.768055555555556in” height=”0.37083333333333335in”}</p>
+<h4 id="第二种还原方式"><a href="#第二种还原方式" class="headerlink" title="第二种还原方式"></a>第二种还原方式</h4><ul>
+<li><strong>第一步：在数据库服务器内部创建数据库：</strong></li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image8.png){width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
+<ul>
+<li><strong>第二步：切换到该数据库使用source命令还原</strong></li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image10.png){width=”5.768055555555556in” height=”0.4305555555555556in”}</p>
+<h2 id="MySQL的可视化工具使用"><a href="#MySQL的可视化工具使用" class="headerlink" title="MySQL的可视化工具使用"></a>MySQL的可视化工具使用</h2><h3 id="SQLyog可视化工具"><a href="#SQLyog可视化工具" class="headerlink" title="SQLyog可视化工具"></a>SQLyog可视化工具</h3><h4 id="可视化工具连接到MySQL"><a href="#可视化工具连接到MySQL" class="headerlink" title="可视化工具连接到MySQL"></a>可视化工具连接到MySQL</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image11.png){width=”5.768055555555556in” height=”4.6125in”}</p>
+<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><ul>
+<li>在空白处点击右键</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image12.png){width=”3.8645833333333335in” height=”1.6354166666666667in”}</p>
+<ul>
+<li>输入数据库名称</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image13.png){width=”3.59375in” height=”2.0416666666666665in”}</p>
+<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image14.png){width=”5.768055555555556in” height=”1.6125in”}</p>
+<h4 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h4><ul>
+<li>在Tables上右键：</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image15.png){width=”2.3541666666666665in” height=”0.6770833333333334in”}</p>
+<ul>
+<li>创建表</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image16.png){width=”5.768055555555556in” height=”2.6034722222222224in”}</p>
+<h4 id="向表中插入记录"><a href="#向表中插入记录" class="headerlink" title="向表中插入记录"></a>向表中插入记录</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image17.png){width=”3.40625in” height=”0.875in”}</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image18.png){width=”5.385416666666667in” height=”1.4270833333333333in”}</p>
+<h4 id="执行SQL语句"><a href="#执行SQL语句" class="headerlink" title="执行SQL语句"></a>执行SQL语句</h4><ul>
+<li>编写SQL</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image19.png){width=”5.768055555555556in” height=”0.6111111111111112in”}</p>
+<ul>
+<li>执行SQL</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image20.png){width=”5.768055555555556in” height=”0.7208333333333333in”}</p>
+<h4 id="数据库备份"><a href="#数据库备份" class="headerlink" title="数据库备份:"></a>数据库备份:</h4><ul>
+<li>备份数据库</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image21.png){width=”5.768055555555556in” height=”1.1916666666666667in”}</p>
+<ul>
+<li>导出SQL</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image22.png){width=”5.768055555555556in” height=”4.70625in”}</p>
+<h2 id="多表设计之外键约束"><a href="#多表设计之外键约束" class="headerlink" title="多表设计之外键约束"></a>多表设计之外键约束</h2><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="约束的作用"><a href="#约束的作用" class="headerlink" title="约束的作用"></a>约束的作用</h4><p>约束是用来保证数据的完整性。</p>
+<h4 id="单表约束"><a href="#单表约束" class="headerlink" title="单表约束"></a>单表约束</h4><ul>
+<li><p>主键约束</p>
+</li>
+<li><p>唯一约束</p>
+</li>
+<li><p>非空约束</p>
+</li>
+</ul>
+<h4 id="多表约束"><a href="#多表约束" class="headerlink" title="多表约束"></a>多表约束</h4><ul>
+<li>外键约束：用来保证数据完整性（多表之间）。</li>
+</ul>
+<h3 id="演示外键约束作用"><a href="#演示外键约束作用" class="headerlink" title="演示外键约束作用"></a>演示外键约束作用</h3><h4 id="创建一个部门表"><a href="#创建一个部门表" class="headerlink" title="创建一个部门表"></a>创建一个部门表</h4><p>create table dept(</p>
+<p>did int primary key auto_increment,</p>
+<p>dname varchar(20)</p>
+<p>);</p>
+<p>insert into dept values (null,&#39;市场部&#39;);</p>
+<p>insert into dept values (null,&#39;人事部&#39;);</p>
+<p>insert into dept values (null,&#39;教研部&#39;);</p>
+<h4 id="创建一个员工表"><a href="#创建一个员工表" class="headerlink" title="创建一个员工表"></a>创建一个员工表</h4><p>create table employee(</p>
+<p>eid int primary key auto_increment,</p>
+<p>ename varchar(20),</p>
+<p>salary double,</p>
+<p>birthday date,</p>
+<p>sex varchar(10),</p>
+<p>dno int</p>
+<p>);</p>
+<p>insert into employee values (null,&#39;张三&#39;,8000,&#39;1988-09-01&#39;,&#39;男&#39;,3);</p>
+<p>insert into employee values (null,&#39;李四&#39;,9000,&#39;1988-09-01&#39;,&#39;男&#39;,1);</p>
+<p>insert into employee values (null,&#39;王五&#39;,6000,&#39;1988-09-01&#39;,&#39;男&#39;,2);</p>
+<p>insert into employee values (null,&#39;赵六&#39;,10000,&#39;1988-09-01&#39;,&#39;男&#39;,3);</p>
+<p>insert into employee values (null,&#39;孙七&#39;,10000,&#39;1988-09-01&#39;,&#39;男&#39;,1);</p>
+<h4 id="删除其中的某个部门（是否可以）"><a href="#删除其中的某个部门（是否可以）" class="headerlink" title="删除其中的某个部门（是否可以）"></a>删除其中的某个部门（是否可以）</h4><ul>
+<li>查看数据</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image23.png){width=”5.697916666666667in” height=”3.5520833333333335in”}</p>
+<ul>
+<li>向员工表中插入一条记录（没有部门）</li>
+</ul>
+<p><strong>insert into employee values (null,&#39;田八&#39;,10000,&#39;1988-09-01&#39;,&#39;男&#39;,null);</strong></p>
+<ul>
+<li>删除一个人事部</li>
+</ul>
+<p>delete from dept where did = 2;</p>
+<p><strong>向刚才做的这两个操作（插入一个没有部门的员工，删除一个带有员工的部门）。这种情况都是不应该发生。这个时候需要在多表之间添加外键约束。</strong></p>
+<h3 id="添加外键约束"><a href="#添加外键约束" class="headerlink" title="添加外键约束"></a>添加外键约束</h3><h4 id="在员工表上添加外键"><a href="#在员工表上添加外键" class="headerlink" title="在员工表上添加外键"></a>在员工表上添加外键</h4><p>alter table employee add foreign key (dno) references dept(did);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image24.png){width=”5.768055555555556in” height=”0.5104166666666666in”}</p>
+<h4 id="设置外键为非空"><a href="#设置外键为非空" class="headerlink" title="设置外键为非空"></a>设置外键为非空</h4><p>alter table employee modify dno int not null;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image25.png){width=”4.677083333333333in” height=”0.5625in”}</p>
+<h2 id="多表设计之表关系的介绍"><a href="#多表设计之表关系的介绍" class="headerlink" title="多表设计之表关系的介绍"></a>多表设计之表关系的介绍</h2><h3 id="表与表之间的关系"><a href="#表与表之间的关系" class="headerlink" title="表与表之间的关系"></a>表与表之间的关系</h3><h4 id="一对多的关系"><a href="#一对多的关系" class="headerlink" title="一对多的关系"></a>一对多的关系</h4><ul>
+<li><p>一对多的例子：</p>
+<ul>
+<li>一个部门下可以有多个员工，一个员工只能属于某一个部门。</li>
+</ul>
+</li>
+</ul>
+<h4 id="多对多的关系"><a href="#多对多的关系" class="headerlink" title="多对多的关系"></a>多对多的关系</h4><ul>
+<li><p>多对多的例子：</p>
+<ul>
+<li>一个学生可以选择多门课程，一门课程可以被多个学生选择。</li>
+</ul>
+</li>
+</ul>
+<h4 id="一对一的关系"><a href="#一对一的关系" class="headerlink" title="一对一的关系"></a>一对一的关系</h4><ul>
+<li><p>一对一的例子：</p>
+<ul>
+<li>一个公司可以有一个注册地址，一个注册地址只能对一个公司。</li>
+</ul>
+</li>
+</ul>
+<h2 id="多表设计之一对多关系"><a href="#多表设计之一对多关系" class="headerlink" title="多表设计之一对多关系"></a>多表设计之一对多关系</h2><h3 id="一对多关系介绍"><a href="#一对多关系介绍" class="headerlink" title="一对多关系介绍"></a>一对多关系介绍</h3><h4 id="一对多关系的建表原则"><a href="#一对多关系的建表原则" class="headerlink" title="一对多关系的建表原则"></a>一对多关系的建表原则</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image26.png){width=”5.768055555555556in” height=”2.1569444444444446in”}</p>
+<p><strong>在多的一方创建外键指向一的一方的主键</strong></p>
+<ol>
+<li><h2 id="多表设计之多对多"><a href="#多表设计之多对多" class="headerlink" title="多表设计之多对多"></a>多表设计之多对多</h2><ol>
+<li><h3 id="多对多的关系介绍"><a href="#多对多的关系介绍" class="headerlink" title="多对多的关系介绍"></a>多对多的关系介绍</h3></li>
+</ol>
+</li>
+</ol>
+<p>一个学生选择多门课程，一门课程被多个学生所选择</p>
+<h4 id="多对多的建表的原则"><a href="#多对多的建表的原则" class="headerlink" title="多对多的建表的原则"></a>多对多的建表的原则</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image27.png){width=”5.768055555555556in” height=”2.7840277777777778in”}</p>
+<p><strong>需要创建中间表，中间表中至少两个字段，分别作为外键指向多对多双方的主键</strong></p>
+<h2 id="多表设计之一对一关系"><a href="#多表设计之一对一关系" class="headerlink" title="多表设计之一对一关系"></a>多表设计之一对一关系</h2><h3 id="一对一关系的介绍"><a href="#一对一关系的介绍" class="headerlink" title="一对一关系的介绍"></a>一对一关系的介绍</h3><p>一个公司可以对应一个注册地址，一个注册地址只能对应一个公司</p>
+<h4 id="一对一关系建表原则"><a href="#一对一关系建表原则" class="headerlink" title="一对一关系建表原则"></a>一对一关系建表原则</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image28.png){width=”5.768055555555556in” height=”2.6840277777777777in”}</p>
+<ul>
+<li><p><strong>唯一外键对应</strong></p>
+<ul>
+<li><strong>假设是一对多，在多的一方创建外键指向一的一方的主键，将外键设置为unique。</strong></li>
+</ul>
+</li>
+<li><p><strong>主键对应</strong></p>
+<ul>
+<li><strong>将两个表的主键建立对应关系即可。</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="多表设计之多表分析及创建"><a href="#多表设计之多表分析及创建" class="headerlink" title="多表设计之多表分析及创建"></a>多表设计之多表分析及创建</h2><h3 id="多表的分析"><a href="#多表的分析" class="headerlink" title="多表的分析"></a>多表的分析</h3><h4 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h4><p>完成一个学校的选课系统，在选课系统中包含班级，学生和课程这些实体。</p>
+<ul>
+<li><p>班级和学生之间是有关系存在：</p>
+<ul>
+<li>一个班级下包含多个学生，一个学生只能属于某一个班级（一对多的关系）。</li>
+</ul>
+</li>
+<li><p>学生和课程之间是有关系存在：</p>
+<ul>
+<li>一个学生可以选择多门课程，一门课程也可以被多个学生所选择（多对多的关系）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="多表的创建"><a href="#多表的创建" class="headerlink" title="多表的创建"></a>多表的创建</h3><h4 id="创建表-1"><a href="#创建表-1" class="headerlink" title="创建表"></a>创建表</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image29.png){width=”5.768055555555556in” height=”2.9541666666666666in”}</p>
+<h3 id="作业："><a href="#作业：" class="headerlink" title="作业："></a>作业：</h3><h4 id="需求：-1"><a href="#需求：-1" class="headerlink" title="需求："></a>需求：</h4><p>实现一个网上商城案例，在商城中会有用户，商品，订单，商品分类。</p>
+<h2 id="多表查询之多表查询的概述"><a href="#多表查询之多表查询的概述" class="headerlink" title="多表查询之多表查询的概述"></a>多表查询之多表查询的概述</h2><h3 id="多表查询的分类"><a href="#多表查询的分类" class="headerlink" title="多表查询的分类"></a>多表查询的分类</h3><h4 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h4><ul>
+<li><p>交叉连接:cross join</p>
+<ul>
+<li><p>交叉连接：查询到的是两个表的笛卡尔积。</p>
+</li>
+<li><p>语法：</p>
+<ul>
+<li><p>select * from 表1 <strong>cross join</strong> 表2;</p>
+</li>
+<li><p>select * from 表1,表2;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>内连接:inner join(inner是可以省略的)</strong></p>
+<ul>
+<li><p><strong>显示内连接：在SQL中显示的调用inner join关键字</strong></p>
+<ul>
+<li>语法：select * from 表1 inner join 表2 on 关联条件;</li>
+</ul>
+</li>
+<li><p><strong>隐式内连接：在SQL中没有调用inner join关键字</strong></p>
+<ul>
+<li>语法：select * from 表1,表2 where 关联条件;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>外连接:outer join(outer可以省略的)</strong></p>
+<ul>
+<li><p><strong>左外连接：</strong></p>
+<ul>
+<li>语法：select * from 表1 left outer join 表2 on 关联条件;</li>
+</ul>
+</li>
+<li><p><strong>右外连接</strong></p>
+<ul>
+<li>语法：select * from 表1 right outer join 表2 on 关联条件;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><ul>
+<li>子查询：一个查询语句条件需要依赖另一个查询语句的结果。</li>
+</ul>
+<h2 id="多表查询之数据准备"><a href="#多表查询之数据准备" class="headerlink" title="多表查询之数据准备"></a>多表查询之数据准备</h2><h3 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h3><h4 id="班级表数据的准备"><a href="#班级表数据的准备" class="headerlink" title="班级表数据的准备"></a>班级表数据的准备</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image30.png){width=”2.7291666666666665in” height=”1.1458333333333333in”}</p>
+<h4 id="学生表数据的准备"><a href="#学生表数据的准备" class="headerlink" title="学生表数据的准备"></a>学生表数据的准备</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image31.png){width=”3.9375in” height=”2.0729166666666665in”}</p>
+<h4 id="课程表数据的准备"><a href="#课程表数据的准备" class="headerlink" title="课程表数据的准备"></a>课程表数据的准备</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image32.png){width=”1.6770833333333333in” height=”0.9479166666666666in”}</p>
+<h4 id="学生选课表的准备"><a href="#学生选课表的准备" class="headerlink" title="学生选课表的准备"></a>学生选课表的准备</h4><p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image33.png){width=”3.0729166666666665in” height=”4.125in”}</p>
+<ol>
+<li><h2 id="多表查询之交叉连接"><a href="#多表查询之交叉连接" class="headerlink" title="多表查询之交叉连接"></a>多表查询之交叉连接</h2><ol>
+<li><h3 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h3><ol>
+<li><h4 id="使用cross-join关键字"><a href="#使用cross-join关键字" class="headerlink" title="使用cross join关键字"></a>使用cross join关键字</h4></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>select * from classes cross join student;</p>
+<h4 id="不使用cross-join关键字"><a href="#不使用cross-join关键字" class="headerlink" title="不使用cross join关键字"></a>不使用cross join关键字</h4><p>SELECT * FROM classes,student;</p>
+<ol>
+<li><h2 id="多表查询之内连接"><a href="#多表查询之内连接" class="headerlink" title="多表查询之内连接"></a>多表查询之内连接</h2><ol>
+<li><h3 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h3><ol>
+<li><h4 id="显示内连接"><a href="#显示内连接" class="headerlink" title="显示内连接"></a>显示内连接</h4></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>select * from classes c inner join student s on c.cid = s.cno;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image34.png){width=”5.768055555555556in” height=”1.492361111111111in”}</p>
+<h4 id="隐式内连接"><a href="#隐式内连接" class="headerlink" title="隐式内连接"></a>隐式内连接</h4><p>SELECT * FROM classes c,student s WHERE c.cid = s.cno;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image35.png){width=”5.768055555555556in” height=”1.5118055555555556in”}</p>
+<ol>
+<li><h2 id="多表查询之外连接"><a href="#多表查询之外连接" class="headerlink" title="多表查询之外连接"></a>多表查询之外连接</h2><ol>
+<li><h3 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h3><ol>
+<li><h4 id="左外连接"><a href="#左外连接" class="headerlink" title="左外连接"></a>左外连接</h4></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>SELECT * FROM classes c LEFT OUTER JOIN student s ON c.cid = s.cno;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image36.png){width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
+<h4 id="右外连接"><a href="#右外连接" class="headerlink" title="右外连接"></a>右外连接</h4><p>select * from classes c right outer join student s on c.cid = s.cno;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image37.png){width=”5.768055555555556in” height=”1.6222222222222222in”}</p>
+<ol>
+<li><h2 id="多表查询之内连接与外连接的区别"><a href="#多表查询之内连接与外连接的区别" class="headerlink" title="多表查询之内连接与外连接的区别"></a>多表查询之内连接与外连接的区别</h2><ol>
+<li><h3 id="内连接和外连接的区别"><a href="#内连接和外连接的区别" class="headerlink" title="内连接和外连接的区别"></a>内连接和外连接的区别</h3></li>
+</ol>
+</li>
+</ol>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image38.png){width=”5.768055555555556in” height=”2.963888888888889in”}</p>
+<h2 id="多表查询之子查询"><a href="#多表查询之子查询" class="headerlink" title="多表查询之子查询"></a>多表查询之子查询</h2><h3 id="子查询-1"><a href="#子查询-1" class="headerlink" title="子查询"></a>子查询</h3><h4 id="带in的子查询"><a href="#带in的子查询" class="headerlink" title="带in的子查询"></a>带in的子查询</h4><ul>
+<li>查询学生生日在91年之后的班级的信息。</li>
+</ul>
+<p>select * from classes where cid in (SELECT cno FROM student WHERE birthday &gt; &#39;1991-01-01&#39;);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image39.png){width=”2.7083333333333335in” height=”0.59375in”}</p>
+<h4 id="带exists的子查询"><a href="#带exists的子查询" class="headerlink" title="带exists的子查询"></a>带exists的子查询</h4><ul>
+<li>查询学生生日大于91年1月1日，如果记录存在，前面的SQL语句就会执行</li>
+</ul>
+<p>select * from classes where exists (SELECT cno FROM student WHERE birthday &gt; &#39;1991-01-01&#39;);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image40.png){width=”2.6875in” height=”0.9479166666666666in”}</p>
+<h4 id="带any的子查询"><a href="#带any的子查询" class="headerlink" title="带any的子查询"></a>带any的子查询</h4><p>SELECT * FROM classes WHERE cid &gt; ANY (SELECT cno FROM student )</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image41.png){width=”2.6666666666666665in” height=”0.7604166666666666in”}</p>
+<h4 id="带all的子查询"><a href="#带all的子查询" class="headerlink" title="带all的子查询"></a>带all的子查询</h4><p>SELECT * FROM classes WHERE cid &gt; ALL (SELECT cno FROM student)</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image42.png){width=”2.6979166666666665in” height=”0.4479166666666667in”}</p>
+<h2 id="多表查询之练习"><a href="#多表查询之练习" class="headerlink" title="多表查询之练习"></a>多表查询之练习</h2><h3 id="多表查询的练习"><a href="#多表查询的练习" class="headerlink" title="多表查询的练习"></a>多表查询的练习</h3><ul>
+<li>查询班级名称，和班级总人数</li>
+</ul>
+<p>SELECT c.cname,COUNT(*) FROM classes c,student s WHERE c.cid = s.cno GROUP BY c.cname;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image43.png){width=”1.8020833333333333in” height=”0.78125in”}</p>
+<ul>
+<li>查询学生的姓名和学生所选的总课程平均成绩。</li>
+</ul>
+<p>select s.sname,avg(sc.score) from student s,stu_cour sc where s.sid = sc.sno group by s.sname;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image44.png){width=”2.3229166666666665in” height=”1.8958333333333333in”}</p>
+<ul>
+<li>查询学生的姓名和学生的选课总数，显示选课超过2门学生姓名。</li>
+</ul>
+<p>select s.sname,count(*) from student s,stu_cour sc where s.sid = sc.sno group by s.sname having count(*) &gt; 2;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image45.png){width=”1.8229166666666667in” height=”0.5520833333333334in”}</p>
+<ul>
+<li>查询平均成绩大于80分的学生的总数。</li>
+</ul>
+<p>select count(*) from student s where s.sid in (SELECT sc.sno FROM stu_cour sc GROUP BY sc.sno HAVING AVG(sc.score) &gt; 80);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image46.png){width=”1.1041666666666667in” height=”0.3645833333333333in”}</p>
+<ul>
+<li>查询学生和平均成绩，但是平均成绩大于01班的任何一个学生的评价成绩。</li>
+</ul>
+<p>SELECT s.sname,AVG(sc.score) FROM student s,stu_cour sc WHERE s.sid = sc.sno GROUP BY s.sname HAVING AVG(sc.score) &gt; ANY(SELECT AVG(sc.score) FROM student s,stu_cour sc,classes c WHERE s.sid = sc.sno AND s.cno = c.cname AND c.cname =&#39;01班&#39; GROUP BY s.sname);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image47.png){width=”2.34375in” height=”1.3645833333333333in”}</p>
+<h2 id="事务的概述"><a href="#事务的概述" class="headerlink" title="事务的概述"></a>事务的概述</h2><h3 id="事务的概念"><a href="#事务的概念" class="headerlink" title="事务的概念"></a>事务的概念</h3><p>事务：指的是逻辑上的一组操作，组成这组操作的各个逻辑单元，要么全都成功，要么全都失败。</p>
+<h3 id="MySQL中的事务管理"><a href="#MySQL中的事务管理" class="headerlink" title="MySQL中的事务管理"></a>MySQL中的事务管理</h3><h4 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h4><p>create table account(</p>
+<p>id int primary key auto_increment,</p>
+<p>name varchar(20),</p>
+<p>money double</p>
+<p>);</p>
+<p>insert into account values (null,&#39;小张&#39;,10000);</p>
+<p>insert into account values (null,&#39;小凤&#39;,10000);</p>
+<h4 id="转账案例"><a href="#转账案例" class="headerlink" title="转账案例"></a>转账案例</h4><ul>
+<li>开启事务：</li>
+</ul>
+<p>start transaction;</p>
+<ul>
+<li>提交事务</li>
+</ul>
+<p>commit;</p>
+<ul>
+<li>回滚事务</li>
+</ul>
+<p>rollback;</p>
+<ul>
+<li>提交事务</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image48.png){width=”5.768055555555556in” height=”1.8222222222222222in”}</p>
+<p>update account set money=money+1000 where name=&#39;小张&#39;;</p>
+<p>update account set money=money-1000 where name=&#39;小风&#39;;</p>
+<ul>
+<li>回滚事务</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image49.png){width=”5.768055555555556in” height=”3.0541666666666667in”}</p>
+<h3 id="事务的特性："><a href="#事务的特性：" class="headerlink" title="事务的特性："></a>事务的特性：</h3><h4 id="原子性"><a href="#原子性" class="headerlink" title="原子性"></a>原子性</h4><p>原子性：事务的不可分割，组成事务的各个逻辑单元不可分割。</p>
+<h4 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h4><p>一致性：事务执行的前后，数据完整性保持一致。</p>
+<h4 id="隔离性"><a href="#隔离性" class="headerlink" title="隔离性"></a>隔离性</h4><p>隔离性：事务执行不应该受到其他事务的干扰。</p>
+<h4 id="持久性"><a href="#持久性" class="headerlink" title="持久性"></a>持久性</h4><p>持久性：事务一旦结束，数据就持久化到数据库中。</p>
+<h2 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h2><h3 id="如果不考虑隔离性，引发一些安全问题"><a href="#如果不考虑隔离性，引发一些安全问题" class="headerlink" title="如果不考虑隔离性，引发一些安全问题"></a>如果不考虑隔离性，引发一些安全问题</h3><p>隔离性：一个事务的执行，不应该受到其他事务的干扰。</p>
+<p>如果不考虑隔离性（一个事务执行受到其他的事务的干扰），引发一些安全问题，主要体现在读取数据上：</p>
+<ul>
+<li><p>脏读：一个事务读到了另一个事务未提交的数据，导致查询结果不一致</p>
+</li>
+<li><p>不可重复读：一个事务读到了另一个事务已经提交的update的数据，导致多次查询结果不一致。</p>
+</li>
+<li><p>虚读/幻读：一个事务读到了另一个事务已经提交的insert的数据，导致多次查询结果不一致。</p>
+</li>
+</ul>
+<h3 id="解决这些安全性问题："><a href="#解决这些安全性问题：" class="headerlink" title="解决这些安全性问题："></a>解决这些安全性问题：</h3><p>设置事务的隔离级别：</p>
+<ul>
+<li><p>read uncommitted ：脏读，不可重复读，虚读都有可能发生</p>
+</li>
+<li><p>read committed ：避免脏读。但是不可重复读和虚读是有可能发生</p>
+</li>
+<li><p>repeatable read ：避免脏读和不可重复读，但是虚读有可能发生。</p>
+</li>
+<li><p>serializable ：避免脏读，不可重复读，虚读。</p>
+</li>
+</ul>
+<h2 id="事务的隔离级别的演示"><a href="#事务的隔离级别的演示" class="headerlink" title="事务的隔离级别的演示"></a>事务的隔离级别的演示</h2><h3 id="演示脏读"><a href="#演示脏读" class="headerlink" title="演示脏读"></a>演示脏读</h3><ul>
+<li><p>开启两个窗口A,B</p>
+</li>
+<li><p>设置A窗口的隔离级别为read uncommitted;</p>
+</li>
+</ul>
+<p>SET SESSION TRANSACTION ISOLATION LEVEL read uncommitted;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image50.png){width=”5.5in” height=”1.8in”}</p>
+<ul>
+<li>在A，B两个窗口中开启事务</li>
+</ul>
+<p>start transaction;</p>
+<ul>
+<li>在B窗口中完成转账的功能：</li>
+</ul>
+<p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
+<p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
+<p><strong>***** 事务未提交!!!</strong></p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image51.png){width=”5.768055555555556in” height=”1.8263888888888888in”}</p>
+<ul>
+<li>在A窗口中进行查询</li>
+</ul>
+<p>select * from account;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image52.png){width=”3.4in” height=”1.4in”}</p>
+<p><strong>*****发现A窗口中已经查询到转账成功了！！！已经发生了脏读：一个事务中已经读到了另一个事务未提交的数据。</strong></p>
+<h2 id="事务的隔离级别演示"><a href="#事务的隔离级别演示" class="headerlink" title="事务的隔离级别演示"></a>事务的隔离级别演示</h2><h3 id="避免脏读，演示不可重复读发生"><a href="#避免脏读，演示不可重复读发生" class="headerlink" title="避免脏读，演示不可重复读发生"></a>避免脏读，演示不可重复读发生</h3><ul>
+<li><p>开启两个窗口A,B</p>
+</li>
+<li><p>设置A窗口的隔离级别为read committed;</p>
+</li>
+</ul>
+<p>SET SESSION TRANSACTION ISOLATION LEVEL read committed;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image53.png){width=”5.291666666666667in” height=”1.78125in”}</p>
+<ul>
+<li>分别在两个窗口中开启事务：</li>
+</ul>
+<p>start transaction;</p>
+<ul>
+<li>在B窗口中完成转账</li>
+</ul>
+<p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
+<p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image54.png){width=”5.768055555555556in” height=”1.707638888888889in”}</p>
+<p><strong>***** 没有提交事务！！！</strong></p>
+<ul>
+<li>在A窗口中进行查询：</li>
+</ul>
+<p>select * from account;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image55.png){width=”3.21875in” height=”1.3854166666666667in”}</p>
+<p><strong>***** 发现这个时候没有转账成功！！！（没有查询到另一个事务未提交的数据：说明已经避免了脏读）。</strong></p>
+<ul>
+<li><strong>在B窗口中提交事务</strong></li>
+</ul>
+<p>commit;</p>
+<ul>
+<li>在A窗口查询</li>
+</ul>
+<p>select * from account;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image56.png){width=”3.4895833333333335in” height=”3.4479166666666665in”}</p>
+<p><strong>***** 发现这次的结果已经发生了变化！！！（已经发生不可重复读：一个事务已经读到了另一个事务提交的update的数据，导致多次查询结果不一致。）</strong></p>
+<h2 id="事务的隔离级别的演示-1"><a href="#事务的隔离级别的演示-1" class="headerlink" title="事务的隔离级别的演示"></a>事务的隔离级别的演示</h2><h3 id="演示避免不可重复读"><a href="#演示避免不可重复读" class="headerlink" title="演示避免不可重复读"></a>演示避免不可重复读</h3><ul>
+<li><p>分别开启两个窗口A，B</p>
+</li>
+<li><p>设置A窗口的隔离级别：repeatable read;</p>
+</li>
+</ul>
+<p>SET SESSION TRANSACTION ISOLATION LEVEL repeatable read;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image57.png){width=”5.604166666666667in” height=”1.7708333333333333in”}</p>
+<ul>
+<li>在A，B两个窗口中开启事务:</li>
+</ul>
+<p>start transaction;</p>
+<ul>
+<li>在B窗口完成转账</li>
+</ul>
+<p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
+<p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image58.png){width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
+<p><strong>***** 未提交事务！！！</strong></p>
+<ul>
+<li><strong>在A窗口中进行查询</strong></li>
+</ul>
+<p>select * from account;</p>
+<p><strong>***** 发现没有转账成功：说明避免脏读！！！</strong></p>
+<ul>
+<li>在B窗口中提交事务</li>
+</ul>
+<p>commit;</p>
+<ul>
+<li>在A窗口中再次查询：</li>
+</ul>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image59.png){width=”4.135416666666667in” height=”3.40625in”}</p>
+<p><strong>***** 发现在一个事务中的多次查询结果是一致！！！（已经避免不可重复读）。</strong></p>
+<h2 id="事务的隔离级别演示-1"><a href="#事务的隔离级别演示-1" class="headerlink" title="事务的隔离级别演示"></a>事务的隔离级别演示</h2><h3 id="演示串行化"><a href="#演示串行化" class="headerlink" title="演示串行化"></a>演示串行化</h3><ul>
+<li><p>开启两个窗口A,B</p>
+</li>
+<li><p>设置A窗口的隔离级别：serializable</p>
+</li>
+</ul>
+<p>SET SESSION TRANSACTION ISOLATION LEVEL serializable;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image60.png){width=”5.583333333333333in” height=”1.7395833333333333in”}</p>
+<ul>
+<li>分别在两个窗口中开启事务：</li>
+</ul>
+<p>start transaction;</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image61.png){width=”3.4270833333333335in” height=”0.4270833333333333in”}</p>
+<ul>
+<li>在B窗口中插入一条记录</li>
+</ul>
+<p>insert into account values (null,&#39;小李&#39;,10000);</p>
+<p>![](C:\Users\86159\Desktop\新建文件夹\多表查询和事务 - 副本\word\media/image62.png){width=”4.6875in” height=”0.4895833333333333in”}</p>
+<ul>
+<li>在A窗口中进行查询</li>
+</ul>
+<p>select * from account;</p>
+<p><strong>*****发现A窗口已经卡住了（说明事务不允许出现并发，A窗口需要等待B窗口事务执行完成以后，才会执行A窗口的事务。）当B窗口的事务结束（提交或者回滚），那么A窗口马上就会出现结果。</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/11/多表查询和事务/" data-id="cjxjyaf4j0006ykvkq49x1ic3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/06/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo操作/">hexo操作</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo操作/">hexo操作</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo操作/" style="font-size: 10px;">hexo操作</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/11/多表查询和事务/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/11/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/10/JDBC/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/09/Demo/">笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 陈绘百<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
