@@ -5,12 +5,12 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://chenhuibai.github.io">
   <title>幽@静</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="幽@静">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://chenhuibai.github.io/index.html">
 <meta property="og:site_name" content="幽@静">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -155,10 +155,24 @@
     <article id="post-spring5第四天笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/02/spring5第四天笔记/">Spring第4天笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/02/spring5第四天笔记/" class="archive-article-date">
+  	<time datetime="2019-07-02T14:37:43.795Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-02</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Spring第4天笔记</p>
-<h1 id="第1章-课程计划。"><a href="#第1章-课程计划。" class="headerlink" title="第1章     课程计划。"></a>第1章     课程计划。</h1><p>1、作业：</p>
+        <h1 id="第1章-课程计划。"><a href="#第1章-课程计划。" class="headerlink" title="第1章     课程计划。"></a>第1章     课程计划。</h1><p>1、作业：</p>
 <p>​       spring基于AOP的事务控制，转账业务</p>
 <p>2、spring中的JdbcTemplate</p>
 <p>​       JdbcTemplate的作用：</p>
@@ -175,16 +189,16 @@
 <p>4：能够应用声明式事务（第6章）</p>
 <h1 id="第2章-作业：基于XML的AOP实现事务控制"><a href="#第2章-作业：基于XML的AOP实现事务控制" class="headerlink" title="第2章     作业：基于XML的AOP实现事务控制"></a>第2章     作业：基于XML的AOP实现事务控制</h1><h2 id="2-1-准备工作"><a href="#2-1-准备工作" class="headerlink" title="2.1      准备工作"></a>2.1      准备工作</h2><p>第一步：创建工程</p>
 <p>spring_day04_account_aoptx_xml</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image002.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image002.jpg" alt="img"></p>
 <p>第二步：导入坐标</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line"></span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line"></span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line"></span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.itheima&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;spring_day04_account_aoptx_xml&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-test&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;commons-dbutils&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;commons-dbutils&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;1.4&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.1.6&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;c3p0&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;c3p0&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;0.9.1.2&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.aspectj&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;1.8.7&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
 
 
 <p>第三步：删除BeanFactory.java</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image003.png" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image003.png" alt="img"></p>
 <p>删除applicationContext.xml中的配置</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image005.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image005.jpg" alt="img"></p>
 <p>删除AccountServiceTest测试类上的@Qualifier的注解，不产生代理对象</p>
 <p>测试</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line"> * 使用Junit单元测试：测试我们的配置</span><br><span class="line"></span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">@RunWith(SpringJUnit4ClassRunner.class)</span><br><span class="line"></span><br><span class="line">@ContextConfiguration(locations = &quot;classpath:applicationContext.xml&quot;)</span><br><span class="line"></span><br><span class="line">public class AccountServiceTest &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line"></span><br><span class="line">    private AccountService as;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line"></span><br><span class="line">    public  void testTransfer()&#123;</span><br><span class="line"></span><br><span class="line">        as.transfer(&quot;aaa&quot;,&quot;bbb&quot;,100f);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -198,7 +212,7 @@
 <p>再进行测试，事务可以控制。</p>
 <h2 id="2-3-【注解】添加spring的aop"><a href="#2-3-【注解】添加spring的aop" class="headerlink" title="2.3      【注解】添加spring的aop"></a>2.3      【注解】添加spring的aop</h2><p>可以使用【前置通知】、【后置通知】、【异常通知】、【最终通知】吗？</p>
 <p>第一步：创建工程spring_day04_account_aoptx_anno</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image007.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image007.jpg" alt="img"></p>
 <p>第二步：配置pom.xml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line"></span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line"></span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line"></span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.itheima&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;spring_day04_account_aoptx_anno&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-test&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;commons-dbutils&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;commons-dbutils&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;1.4&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.1.6&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;c3p0&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;c3p0&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;0.9.1.2&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.aspectj&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;1.8.7&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
@@ -236,9 +250,9 @@
 
 
 <p>但是发现，抛出异常。</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image009.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image009.jpg" alt="img"></p>
 <p>因为注解的方式执行顺序是【前置通知】、【最终通知】、【异常通知】/【后置通知】</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image011.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image011.jpg" alt="img"></p>
 <p>我们需要使用环绕通知解决问题。</p>
 <p>【解决问题】</p>
 <p>配置TransactionManager.java，问题解决</p>
@@ -247,8 +261,8 @@
 
 
 <p>执行顺序没有问题，事务问题得以解决。</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image013.jpg" alt="img"></p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image015.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image013.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image015.jpg" alt="img"></p>
 <h1 id="第3章-Spring中的JdbcTemplate-会用-了解"><a href="#第3章-Spring中的JdbcTemplate-会用-了解" class="headerlink" title="第3章      Spring中的JdbcTemplate[会用-了解]"></a>第3章      Spring中的JdbcTemplate[会用-了解]</h1><h2 id="3-1-JdbcTemplate概述"><a href="#3-1-JdbcTemplate概述" class="headerlink" title="3.1      JdbcTemplate概述"></a>3.1      JdbcTemplate概述</h2><p>它是spring框架中提供的一个对象，是对原始Jdbc API对象的简单封装。spring框架为我们提供了很多的操作模板类。 </p>
 <p>操作关系型数据的： </p>
 <p>JdbcTemplate （操作JDBC，操作数据库）</p>
@@ -260,13 +274,13 @@
 <p>操作索引库的：ElasticSearchTemplate（操作ElasticSearch，全文检索）</p>
 <p>我们今天的主角在spring-jdbc-5.0.2.RELEASE.jar中，我们在导包的时候，除了要导入这个jar包外，还需要导入一个spring-tx-5.0.2.RELEASE.jar（它是和事务相关的）。 </p>
 <h2 id="3-2-准备工作（直接使用spring的数据源）："><a href="#3-2-准备工作（直接使用spring的数据源）：" class="headerlink" title="3.2      准备工作（直接使用spring的数据源）："></a>3.2      准备工作（直接使用spring的数据源）：</h2><p>第一步：创建工程spring_day04_jdbctemplate</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image017.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image017.jpg" alt="img"></p>
 <p>第二步：导入坐标，pom.xml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line"></span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line"></span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line"></span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.itheima&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;spring_day04_jdbctemplate&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-tx&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.1.6&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
 
 
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image018.png" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image018.png" alt="img"></p>
 <p>第三步：创建com.itheima.domain，创建类Account.java</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line"> * 账户的实体类</span><br><span class="line"></span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class Account implements Serializable &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    private Integer id;</span><br><span class="line"></span><br><span class="line">    private String name;</span><br><span class="line"></span><br><span class="line">    private Float money;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -315,9 +329,9 @@
 
 
 <h2 id="3-6-Spring提供JdbcDaoSupport的使用"><a href="#3-6-Spring提供JdbcDaoSupport的使用" class="headerlink" title="3.6      Spring提供JdbcDaoSupport的使用"></a>3.6      Spring提供JdbcDaoSupport的使用</h2><p>第一步：查看JdbcDaoSupport.java</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image020.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image020.jpg" alt="img"></p>
 <p>此时我们发现Spring框架也提供了一个JdbcDaoSupport，可以帮助我们使用JdbcTemplate。</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image022.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image022.jpg" alt="img"></p>
 <p>第二步：使用AccountDaoImpl继承JdbcDaoSupport，实现AccountDao</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line"> * 账户的持久层实现类</span><br><span class="line"></span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public Account findAccountById(Integer accountId) &#123;</span><br><span class="line"></span><br><span class="line">        List&lt;Account&gt; accounts = super.getJdbcTemplate().query(&quot;select * from account where id = ?&quot;,new BeanPropertyRowMapper&lt;Account&gt;(Account.class),accountId);</span><br><span class="line"></span><br><span class="line">        return accounts.isEmpty()?null:accounts.get(0);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public Account findAccountByName(String accountName) &#123;</span><br><span class="line"></span><br><span class="line">        List&lt;Account&gt; accounts = super.getJdbcTemplate().query(&quot;select * from account where name = ?&quot;,new BeanPropertyRowMapper&lt;Account&gt;(Account.class),accountName);</span><br><span class="line"></span><br><span class="line">        if(accounts.isEmpty())&#123;</span><br><span class="line"></span><br><span class="line">            return null;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if(accounts.size()&gt;1)&#123;</span><br><span class="line"></span><br><span class="line">            throw new RuntimeException(&quot;结果集不唯一&quot;);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return accounts.get(0);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public void updateAccount(Account account) &#123;</span><br><span class="line"></span><br><span class="line">        super.getJdbcTemplate().update(&quot;update account set name=?,money=? where id=?&quot;,account.getName(),account.getMoney(),account.getId());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -365,16 +379,16 @@
 <p>第二：spring框架为我们提供了一组事务控制的接口 。具体在后面的第二小节介绍。这组接口是在spring-tx-5.0.2.RELEASE.jar中。 </p>
 <p>第三：spring的事务控制都是基于AOP的，它既可以使用编程的方式实现，也可以使用配置的方式（声明式）实现。我们学习的重点是使用配置（声明式事务处理）的方式实现。 </p>
 <h2 id="4-2-Spring中事务控制的API介绍"><a href="#4-2-Spring中事务控制的API介绍" class="headerlink" title="4.2     Spring中事务控制的API介绍"></a>4.2     Spring中事务控制的API介绍</h2><h3 id="4-2-1-PlatformTransactionManager"><a href="#4-2-1-PlatformTransactionManager" class="headerlink" title="4.2.1     PlatformTransactionManager"></a>4.2.1     PlatformTransactionManager</h3><p>此接口是spring的事务管理器，它里面提供了我们常用的操作事务的方法，如下图： </p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image024.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image024.jpg" alt="img"></p>
 <p>我们在开发中都是使用它的实现类： </p>
 <p>真正管理事务的对象 </p>
 <p><strong>org.springframework.jdbc.datasource.DataSourceTransactionManager</strong> 使用<strong>Spring JDBC</strong>或my<strong>Batis</strong> 进行持久化数据时使用 </p>
 <p><strong>org.springframework.orm.hibernate5.HibernateTransactionManager</strong> 使用<strong>Hibernate</strong>版本进行持久化数据时使用 </p>
 <p><strong>JpaTransactionManager</strong>，使用Jpa操作持久化数据时使用</p>
 <h3 id="4-2-2-TransactionDefinition"><a href="#4-2-2-TransactionDefinition" class="headerlink" title="4.2.2     TransactionDefinition"></a>4.2.2     TransactionDefinition</h3><p>它是事务的定义信息对象，里面有如下方法： </p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image026.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image026.jpg" alt="img"></p>
 <p>1：事务的隔离级别 </p>
-<p>2<img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image028.jpg" alt="img"></p>
+<p>2<img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image028.jpg" alt="img"></p>
 <p>2：事务的传播行为 </p>
 <p>REQUIRED:如果当前没有事务，就新建一个事务，如果已经存在一个事务中，加入到这个事务中。一般的选择（默认值） </p>
 <p>SUPPORTS:支持当前事务，如果当前没有事务，就以非事务方式执行（没有事务） </p>
@@ -389,9 +403,9 @@
 <p>建议查询时设置为只读。 </p>
 <p>增删改设置可写。</p>
 <h3 id="4-2-3-TransactionStatus（了解）"><a href="#4-2-3-TransactionStatus（了解）" class="headerlink" title="4.2.3     TransactionStatus（了解）"></a>4.2.3     TransactionStatus（了解）</h3><p>此接口提供的是事务具体的运行状态，方法介绍如下图： </p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image030.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image030.jpg" alt="img"></p>
 <h1 id="第5章-Spring的编程式事务处理（了解）"><a href="#第5章-Spring的编程式事务处理（了解）" class="headerlink" title="第5章     Spring的编程式事务处理（了解）"></a>第5章     Spring的编程式事务处理（了解）</h1><h2 id="5-1-准备工作"><a href="#5-1-准备工作" class="headerlink" title="5.1      准备工作"></a>5.1      准备工作</h2><p>第一步：创建工程spring_day04_tx</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image032.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image032.jpg" alt="img"></p>
 <p>第二步：导入坐标</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line"></span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line"></span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line"></span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.itheima&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;spring_day04_tx&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-tx&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;spring-test&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.0.2.RELEASE&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;5.1.6&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;org.aspectj&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;1.8.7&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line"></span><br><span class="line">            &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">            &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
@@ -452,9 +466,9 @@
 <p>问题；代码具有侵入性，开发效率很慢。</p>
 <h1 id="第6章-Spring的声明式事务处理（重点）"><a href="#第6章-Spring的声明式事务处理（重点）" class="headerlink" title="第6章     Spring的声明式事务处理（重点）"></a>第6章     Spring的声明式事务处理（重点）</h1><h2 id="6-1-配置文件"><a href="#6-1-配置文件" class="headerlink" title="6.1     配置文件"></a>6.1     配置文件</h2><p>创建工程</p>
 <p>spring_day04_tx_xml</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image034.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image034.jpg" alt="img"></p>
 <p>拷贝：</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image035.png" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image035.png" alt="img"></p>
 <p>同时去掉：TransactionTemplate的操作</p>
 <p>第一步：配置applicationContext.xml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line"></span><br><span class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;</span><br><span class="line"></span><br><span class="line">       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;</span><br><span class="line"></span><br><span class="line">       xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot;</span><br><span class="line"></span><br><span class="line">       xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot;</span><br><span class="line"></span><br><span class="line">       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line"></span><br><span class="line">       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/beans/spring-beans.xsd</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/context</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/context/spring-context.xsd</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/aop</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/aop/spring-aop.xsd</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/tx</span><br><span class="line"></span><br><span class="line">                            http://www.springframework.org/schema/tx/spring-tx.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 配置账户的业务层--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;bean id=&quot;accountService&quot; class=&quot;com.itheima.service.impl.AccountServiceImpl&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;accountDao&quot; ref=&quot;accountDao&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- 配置账户的持久层--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;bean id=&quot;accountDao&quot; class=&quot;com.itheima.dao.impl.AccountDaoImpl&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- 配置数据源--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;bean id=&quot;dataSource&quot; class=&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;driverClassName&quot; value=&quot;com.mysql.jdbc.Driver&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;url&quot; value=&quot;jdbc:mysql://localhost:3306/itcastspring&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;username&quot; value=&quot;root&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;password&quot; value=&quot;root&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- spring中基于XML的声明式事务控制配置步骤</span><br><span class="line"></span><br><span class="line">        1、配置事务管理器</span><br><span class="line"></span><br><span class="line">        2、配置事务的通知</span><br><span class="line"></span><br><span class="line">                此时我们需要导入事务的约束 tx名称空间和约束，同时也需要aop的</span><br><span class="line"></span><br><span class="line">                使用tx:advice标签配置事务通知</span><br><span class="line"></span><br><span class="line">                    属性：</span><br><span class="line"></span><br><span class="line">                        id：给事务通知起一个唯一标识</span><br><span class="line"></span><br><span class="line">                        transaction-manager：给事务通知提供一个事务管理器引用</span><br><span class="line"></span><br><span class="line">        3、配置AOP中的通用切入点表达式</span><br><span class="line"></span><br><span class="line">        4、建立事务通知和切入点表达式的对应关系</span><br><span class="line"></span><br><span class="line">        5、配置事务的属性</span><br><span class="line"></span><br><span class="line">               是在事务的通知tx:advice标签的内部</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 一：配置事务管理器 --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;bean id=&quot;transactionManager&quot; class=&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- 二：配置事务的通知--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;tx:advice id=&quot;txAdvice&quot; transaction-manager=&quot;transactionManager&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 配置事务的属性</span><br><span class="line"></span><br><span class="line">                isolation：用于指定事务的隔离级别。默认值是DEFAULT，表示使用数据库的默认隔离级别。</span><br><span class="line"></span><br><span class="line">                propagation：用于指定事务的传播行为。默认值是REQUIRED，表示一定会有事务，增删改的选择。查询方法可以选择SUPPORTS。</span><br><span class="line"></span><br><span class="line">                read-only：用于指定事务是否只读。只有查询方法才能设置为true。默认值是false，表示读写。</span><br><span class="line"></span><br><span class="line">                timeout：用于指定事务的超时时间，默认值是-1，表示永不超时。如果指定了数值，以秒为单位。</span><br><span class="line"></span><br><span class="line">                rollback-for：用于指定一个异常，当产生该异常时，事务回滚，产生其他异常时，事务不回滚。没有默认值。表示任何异常都回滚。</span><br><span class="line"></span><br><span class="line">                no-rollback-for：用于指定一个异常，当产生该异常时，事务不回滚，产生其他异常时事务回滚。没有默认值。表示任何异常都回滚。</span><br><span class="line"></span><br><span class="line">      测试：no-rollback-for=&quot;java.lang.ArithmeticException&quot;，遇到算数异常不回滚</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;tx:attributes&gt;</span><br><span class="line"></span><br><span class="line">            &lt;tx:method name=&quot;*&quot; propagation=&quot;REQUIRED&quot; read-only=&quot;false&quot;/&gt;</span><br><span class="line"></span><br><span class="line">            &lt;tx:method name=&quot;find*&quot; propagation=&quot;SUPPORTS&quot; read-only=&quot;true&quot;&gt;&lt;/tx:method&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/tx:attributes&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tx:advice&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- 三：配置aop--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;aop:config&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 配置切入点表达式--&gt;</span><br><span class="line"></span><br><span class="line">        &lt;aop:pointcut id=&quot;pc&quot; expression=&quot;execution(* com.itheima.service..*.*(..))&quot;&gt;&lt;/aop:pointcut&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--建立切入点表达式和事务通知的对应关系 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;aop:advisor advice-ref=&quot;txAdvice&quot; pointcut-ref=&quot;pc&quot;&gt;&lt;/aop:advisor&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/aop:config&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
@@ -464,9 +478,9 @@
 <p>此时，发现事务控制住了。^_^</p>
 <h2 id="6-2-注解"><a href="#6-2-注解" class="headerlink" title="6.2     注解"></a>6.2     注解</h2><p>创建工程</p>
 <p>spring_day04_tx_anno</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image037.jpg" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image037.jpg" alt="img"></p>
 <p>拷贝：</p>
-<p><img src=".%5Cspring5%E7%AC%AC%E5%9B%9B%E5%A4%A9%E7%AC%94%E8%AE%B0/clip_image038.png" alt="img"></p>
+<p><img src="//chenhuibai.github.io/2019/07/02/spring5第四天笔记/clip_image038.png" alt="img"></p>
 <p>第一步：配置AccountDaoImpl.java</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@Repository</span><br><span class="line"></span><br><span class="line">public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line"></span><br><span class="line">    public void setDi(DataSource dataSource)&#123;</span><br><span class="line"></span><br><span class="line">        super.setDataSource(dataSource);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -545,70 +559,85 @@
     <article id="post-多表查询和事务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/11/多表查询和事务/">多表查询和事务</a>
+    </h1>
+  
+
+        
+        <a href="/2019/06/11/多表查询和事务/" class="archive-article-date">
+  	<time datetime="2019-06-11T15:17:33.071Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-11</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="重置MySQL的密码"><a href="#重置MySQL的密码" class="headerlink" title="重置MySQL的密码"></a>重置MySQL的密码</h2><h3 id="重置MySQL的密码步骤"><a href="#重置MySQL的密码步骤" class="headerlink" title="重置MySQL的密码步骤"></a>重置MySQL的密码步骤</h3><h4 id="第一步：停止MySQL的服务"><a href="#第一步：停止MySQL的服务" class="headerlink" title="第一步：停止MySQL的服务"></a>第一步：停止MySQL的服务</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image1.png" alt>{width=”5.0625in” height=”6.322916666666667in”}</p>
-<h4 id="第二步：在cmd下启动MySQL服务"><a href="#第二步：在cmd下启动MySQL服务" class="headerlink" title="第二步：在cmd下启动MySQL服务"></a>第二步：在cmd下启动MySQL服务</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image2.png" alt>{width=”5.768055555555556in” height=”1.8527777777777779in”}</p>
+        <h2 id="重置MySQL的密码"><a href="#重置MySQL的密码" class="headerlink" title="重置MySQL的密码"></a>重置MySQL的密码</h2><h3 id="重置MySQL的密码步骤"><a href="#重置MySQL的密码步骤" class="headerlink" title="重置MySQL的密码步骤"></a>重置MySQL的密码步骤</h3><h4 id="第一步：停止MySQL的服务"><a href="#第一步：停止MySQL的服务" class="headerlink" title="第一步：停止MySQL的服务"></a>第一步：停止MySQL的服务</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image1.png" alt>{width=”5.0625in” height=”6.322916666666667in”}</p>
+<h4 id="第二步：在cmd下启动MySQL服务"><a href="#第二步：在cmd下启动MySQL服务" class="headerlink" title="第二步：在cmd下启动MySQL服务"></a>第二步：在cmd下启动MySQL服务</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image2.png" alt>{width=”5.768055555555556in” height=”1.8527777777777779in”}</p>
 <h4 id="第三步：重新开启cmd的命令行"><a href="#第三步：重新开启cmd的命令行" class="headerlink" title="第三步：重新开启cmd的命令行"></a>第三步：重新开启cmd的命令行</h4><p>登录MySQL，不需要输入密码</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image3.png" alt>{width=”5.768055555555556in” height=”2.2131944444444445in”}</p>
-<h4 id="第四步：修改root的密码"><a href="#第四步：修改root的密码" class="headerlink" title="第四步：修改root的密码"></a>第四步：修改root的密码</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image4.png" alt>{width=”5.768055555555556in” height=”0.8111111111111111in”}</p>
-<h4 id="第五步：结束mysqld的进程"><a href="#第五步：结束mysqld的进程" class="headerlink" title="第五步：结束mysqld的进程"></a>第五步：结束mysqld的进程</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image5.png" alt>{width=”5.768055555555556in” height=”0.3402777777777778in”}</p>
-<h4 id="第六步：重新启动MySQL的服务"><a href="#第六步：重新启动MySQL的服务" class="headerlink" title="第六步：重新启动MySQL的服务"></a>第六步：重新启动MySQL的服务</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image6.png" alt>{width=”4.96875in” height=”6.166666666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image3.png" alt>{width=”5.768055555555556in” height=”2.2131944444444445in”}</p>
+<h4 id="第四步：修改root的密码"><a href="#第四步：修改root的密码" class="headerlink" title="第四步：修改root的密码"></a>第四步：修改root的密码</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image4.png" alt>{width=”5.768055555555556in” height=”0.8111111111111111in”}</p>
+<h4 id="第五步：结束mysqld的进程"><a href="#第五步：结束mysqld的进程" class="headerlink" title="第五步：结束mysqld的进程"></a>第五步：结束mysqld的进程</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image5.png" alt>{width=”5.768055555555556in” height=”0.3402777777777778in”}</p>
+<h4 id="第六步：重新启动MySQL的服务"><a href="#第六步：重新启动MySQL的服务" class="headerlink" title="第六步：重新启动MySQL的服务"></a>第六步：重新启动MySQL的服务</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image6.png" alt>{width=”4.96875in” height=”6.166666666666667in”}</p>
 <h2 id="数据库的备份和还原"><a href="#数据库的备份和还原" class="headerlink" title="数据库的备份和还原"></a>数据库的备份和还原</h2><h3 id="数据库的备份"><a href="#数据库的备份" class="headerlink" title="数据库的备份"></a>数据库的备份</h3><h4 id="第一步：打开cmd的命令行窗口"><a href="#第一步：打开cmd的命令行窗口" class="headerlink" title="第一步：打开cmd的命令行窗口"></a>第一步：打开cmd的命令行窗口</h4><p>mysqldump -u root -p web_test1 &gt;C:/web_test1.sql</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image7.png" alt>{width=”5.768055555555556in” height=”0.48055555555555557in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image7.png" alt>{width=”5.768055555555556in” height=”0.48055555555555557in”}</p>
 <h3 id="数据库的还原"><a href="#数据库的还原" class="headerlink" title="数据库的还原"></a>数据库的还原</h3><h4 id="第一种还原方式："><a href="#第一种还原方式：" class="headerlink" title="第一种还原方式："></a>第一种还原方式：</h4><ul>
 <li><strong>第一步：在数据库服务器内部创建数据库：</strong></li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image8.png" alt>{width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image8.png" alt>{width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
 <ul>
 <li><strong>第二步：在命令行窗口</strong></li>
 </ul>
 <p>mysql -u root -p web_test1 &lt; C:/web_test1.sql</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image9.png" alt>{width=”5.768055555555556in” height=”0.37083333333333335in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image9.png" alt>{width=”5.768055555555556in” height=”0.37083333333333335in”}</p>
 <h4 id="第二种还原方式"><a href="#第二种还原方式" class="headerlink" title="第二种还原方式"></a>第二种还原方式</h4><ul>
 <li><strong>第一步：在数据库服务器内部创建数据库：</strong></li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image8.png" alt>{width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image8.png" alt>{width=”3.3333333333333335in” height=”0.5208333333333334in”}</p>
 <ul>
 <li><strong>第二步：切换到该数据库使用source命令还原</strong></li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image10.png" alt>{width=”5.768055555555556in” height=”0.4305555555555556in”}</p>
-<h2 id="MySQL的可视化工具使用"><a href="#MySQL的可视化工具使用" class="headerlink" title="MySQL的可视化工具使用"></a>MySQL的可视化工具使用</h2><h3 id="SQLyog可视化工具"><a href="#SQLyog可视化工具" class="headerlink" title="SQLyog可视化工具"></a>SQLyog可视化工具</h3><h4 id="可视化工具连接到MySQL"><a href="#可视化工具连接到MySQL" class="headerlink" title="可视化工具连接到MySQL"></a>可视化工具连接到MySQL</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image11.png" alt>{width=”5.768055555555556in” height=”4.6125in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image10.png" alt>{width=”5.768055555555556in” height=”0.4305555555555556in”}</p>
+<h2 id="MySQL的可视化工具使用"><a href="#MySQL的可视化工具使用" class="headerlink" title="MySQL的可视化工具使用"></a>MySQL的可视化工具使用</h2><h3 id="SQLyog可视化工具"><a href="#SQLyog可视化工具" class="headerlink" title="SQLyog可视化工具"></a>SQLyog可视化工具</h3><h4 id="可视化工具连接到MySQL"><a href="#可视化工具连接到MySQL" class="headerlink" title="可视化工具连接到MySQL"></a>可视化工具连接到MySQL</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image11.png" alt>{width=”5.768055555555556in” height=”4.6125in”}</p>
 <h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><ul>
 <li>在空白处点击右键</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image12.png" alt>{width=”3.8645833333333335in” height=”1.6354166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image12.png" alt>{width=”3.8645833333333335in” height=”1.6354166666666667in”}</p>
 <ul>
 <li>输入数据库名称</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image13.png" alt>{width=”3.59375in” height=”2.0416666666666665in”}</p>
-<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image14.png" alt>{width=”5.768055555555556in” height=”1.6125in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image13.png" alt>{width=”3.59375in” height=”2.0416666666666665in”}</p>
+<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image14.png" alt>{width=”5.768055555555556in” height=”1.6125in”}</p>
 <h4 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h4><ul>
 <li>在Tables上右键：</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image15.png" alt>{width=”2.3541666666666665in” height=”0.6770833333333334in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image15.png" alt>{width=”2.3541666666666665in” height=”0.6770833333333334in”}</p>
 <ul>
 <li>创建表</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image16.png" alt>{width=”5.768055555555556in” height=”2.6034722222222224in”}</p>
-<h4 id="向表中插入记录"><a href="#向表中插入记录" class="headerlink" title="向表中插入记录"></a>向表中插入记录</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image17.png" alt>{width=”3.40625in” height=”0.875in”}</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image18.png" alt>{width=”5.385416666666667in” height=”1.4270833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image16.png" alt>{width=”5.768055555555556in” height=”2.6034722222222224in”}</p>
+<h4 id="向表中插入记录"><a href="#向表中插入记录" class="headerlink" title="向表中插入记录"></a>向表中插入记录</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image17.png" alt>{width=”3.40625in” height=”0.875in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image18.png" alt>{width=”5.385416666666667in” height=”1.4270833333333333in”}</p>
 <h4 id="执行SQL语句"><a href="#执行SQL语句" class="headerlink" title="执行SQL语句"></a>执行SQL语句</h4><ul>
 <li>编写SQL</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image19.png" alt>{width=”5.768055555555556in” height=”0.6111111111111112in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image19.png" alt>{width=”5.768055555555556in” height=”0.6111111111111112in”}</p>
 <ul>
 <li>执行SQL</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image20.png" alt>{width=”5.768055555555556in” height=”0.7208333333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image20.png" alt>{width=”5.768055555555556in” height=”0.7208333333333333in”}</p>
 <h4 id="数据库备份"><a href="#数据库备份" class="headerlink" title="数据库备份:"></a>数据库备份:</h4><ul>
 <li>备份数据库</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image21.png" alt>{width=”5.768055555555556in” height=”1.1916666666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image21.png" alt>{width=”5.768055555555556in” height=”1.1916666666666667in”}</p>
 <ul>
 <li>导出SQL</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image22.png" alt>{width=”5.768055555555556in” height=”4.70625in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image22.png" alt>{width=”5.768055555555556in” height=”4.70625in”}</p>
 <h2 id="多表设计之外键约束"><a href="#多表设计之外键约束" class="headerlink" title="多表设计之外键约束"></a>多表设计之外键约束</h2><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><h4 id="约束的作用"><a href="#约束的作用" class="headerlink" title="约束的作用"></a>约束的作用</h4><p>约束是用来保证数据的完整性。</p>
 <h4 id="单表约束"><a href="#单表约束" class="headerlink" title="单表约束"></a>单表约束</h4><ul>
 <li><p>主键约束</p>
@@ -644,7 +673,7 @@
 <h4 id="删除其中的某个部门（是否可以）"><a href="#删除其中的某个部门（是否可以）" class="headerlink" title="删除其中的某个部门（是否可以）"></a>删除其中的某个部门（是否可以）</h4><ul>
 <li>查看数据</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image23.png" alt>{width=”5.697916666666667in” height=”3.5520833333333335in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image23.png" alt>{width=”5.697916666666667in” height=”3.5520833333333335in”}</p>
 <ul>
 <li>向员工表中插入一条记录（没有部门）</li>
 </ul>
@@ -655,9 +684,9 @@
 <p>delete from dept where did = 2;</p>
 <p><strong>向刚才做的这两个操作（插入一个没有部门的员工，删除一个带有员工的部门）。这种情况都是不应该发生。这个时候需要在多表之间添加外键约束。</strong></p>
 <h3 id="添加外键约束"><a href="#添加外键约束" class="headerlink" title="添加外键约束"></a>添加外键约束</h3><h4 id="在员工表上添加外键"><a href="#在员工表上添加外键" class="headerlink" title="在员工表上添加外键"></a>在员工表上添加外键</h4><p>alter table employee add foreign key (dno) references dept(did);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image24.png" alt>{width=”5.768055555555556in” height=”0.5104166666666666in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image24.png" alt>{width=”5.768055555555556in” height=”0.5104166666666666in”}</p>
 <h4 id="设置外键为非空"><a href="#设置外键为非空" class="headerlink" title="设置外键为非空"></a>设置外键为非空</h4><p>alter table employee modify dno int not null;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image25.png" alt>{width=”4.677083333333333in” height=”0.5625in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image25.png" alt>{width=”4.677083333333333in” height=”0.5625in”}</p>
 <h2 id="多表设计之表关系的介绍"><a href="#多表设计之表关系的介绍" class="headerlink" title="多表设计之表关系的介绍"></a>多表设计之表关系的介绍</h2><h3 id="表与表之间的关系"><a href="#表与表之间的关系" class="headerlink" title="表与表之间的关系"></a>表与表之间的关系</h3><h4 id="一对多的关系"><a href="#一对多的关系" class="headerlink" title="一对多的关系"></a>一对多的关系</h4><ul>
 <li><p>一对多的例子：</p>
 <ul>
@@ -679,7 +708,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="多表设计之一对多关系"><a href="#多表设计之一对多关系" class="headerlink" title="多表设计之一对多关系"></a>多表设计之一对多关系</h2><h3 id="一对多关系介绍"><a href="#一对多关系介绍" class="headerlink" title="一对多关系介绍"></a>一对多关系介绍</h3><h4 id="一对多关系的建表原则"><a href="#一对多关系的建表原则" class="headerlink" title="一对多关系的建表原则"></a>一对多关系的建表原则</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image26.png" alt>{width=”5.768055555555556in” height=”2.1569444444444446in”}</p>
+<h2 id="多表设计之一对多关系"><a href="#多表设计之一对多关系" class="headerlink" title="多表设计之一对多关系"></a>多表设计之一对多关系</h2><h3 id="一对多关系介绍"><a href="#一对多关系介绍" class="headerlink" title="一对多关系介绍"></a>一对多关系介绍</h3><h4 id="一对多关系的建表原则"><a href="#一对多关系的建表原则" class="headerlink" title="一对多关系的建表原则"></a>一对多关系的建表原则</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image26.png" alt>{width=”5.768055555555556in” height=”2.1569444444444446in”}</p>
 <p><strong>在多的一方创建外键指向一的一方的主键</strong></p>
 <ol>
 <li><h2 id="多表设计之多对多"><a href="#多表设计之多对多" class="headerlink" title="多表设计之多对多"></a>多表设计之多对多</h2><ol>
@@ -688,10 +717,10 @@
 </li>
 </ol>
 <p>一个学生选择多门课程，一门课程被多个学生所选择</p>
-<h4 id="多对多的建表的原则"><a href="#多对多的建表的原则" class="headerlink" title="多对多的建表的原则"></a>多对多的建表的原则</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image27.png" alt>{width=”5.768055555555556in” height=”2.7840277777777778in”}</p>
+<h4 id="多对多的建表的原则"><a href="#多对多的建表的原则" class="headerlink" title="多对多的建表的原则"></a>多对多的建表的原则</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image27.png" alt>{width=”5.768055555555556in” height=”2.7840277777777778in”}</p>
 <p><strong>需要创建中间表，中间表中至少两个字段，分别作为外键指向多对多双方的主键</strong></p>
 <h2 id="多表设计之一对一关系"><a href="#多表设计之一对一关系" class="headerlink" title="多表设计之一对一关系"></a>多表设计之一对一关系</h2><h3 id="一对一关系的介绍"><a href="#一对一关系的介绍" class="headerlink" title="一对一关系的介绍"></a>一对一关系的介绍</h3><p>一个公司可以对应一个注册地址，一个注册地址只能对应一个公司</p>
-<h4 id="一对一关系建表原则"><a href="#一对一关系建表原则" class="headerlink" title="一对一关系建表原则"></a>一对一关系建表原则</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image28.png" alt>{width=”5.768055555555556in” height=”2.6840277777777777in”}</p>
+<h4 id="一对一关系建表原则"><a href="#一对一关系建表原则" class="headerlink" title="一对一关系建表原则"></a>一对一关系建表原则</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image28.png" alt>{width=”5.768055555555556in” height=”2.6840277777777777in”}</p>
 <ul>
 <li><p><strong>唯一外键对应</strong></p>
 <ul>
@@ -717,7 +746,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="多表的创建"><a href="#多表的创建" class="headerlink" title="多表的创建"></a>多表的创建</h3><h4 id="创建表-1"><a href="#创建表-1" class="headerlink" title="创建表"></a>创建表</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image29.png" alt>{width=”5.768055555555556in” height=”2.9541666666666666in”}</p>
+<h3 id="多表的创建"><a href="#多表的创建" class="headerlink" title="多表的创建"></a>多表的创建</h3><h4 id="创建表-1"><a href="#创建表-1" class="headerlink" title="创建表"></a>创建表</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image29.png" alt>{width=”5.768055555555556in” height=”2.9541666666666666in”}</p>
 <h3 id="作业："><a href="#作业：" class="headerlink" title="作业："></a>作业：</h3><h4 id="需求：-1"><a href="#需求：-1" class="headerlink" title="需求："></a>需求：</h4><p>实现一个网上商城案例，在商城中会有用户，商品，订单，商品分类。</p>
 <h2 id="多表查询之多表查询的概述"><a href="#多表查询之多表查询的概述" class="headerlink" title="多表查询之多表查询的概述"></a>多表查询之多表查询的概述</h2><h3 id="多表查询的分类"><a href="#多表查询的分类" class="headerlink" title="多表查询的分类"></a>多表查询的分类</h3><h4 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h4><ul>
 <li><p>交叉连接:cross join</p>
@@ -766,10 +795,10 @@
 <h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><ul>
 <li>子查询：一个查询语句条件需要依赖另一个查询语句的结果。</li>
 </ul>
-<h2 id="多表查询之数据准备"><a href="#多表查询之数据准备" class="headerlink" title="多表查询之数据准备"></a>多表查询之数据准备</h2><h3 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h3><h4 id="班级表数据的准备"><a href="#班级表数据的准备" class="headerlink" title="班级表数据的准备"></a>班级表数据的准备</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image30.png" alt>{width=”2.7291666666666665in” height=”1.1458333333333333in”}</p>
-<h4 id="学生表数据的准备"><a href="#学生表数据的准备" class="headerlink" title="学生表数据的准备"></a>学生表数据的准备</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image31.png" alt>{width=”3.9375in” height=”2.0729166666666665in”}</p>
-<h4 id="课程表数据的准备"><a href="#课程表数据的准备" class="headerlink" title="课程表数据的准备"></a>课程表数据的准备</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image32.png" alt>{width=”1.6770833333333333in” height=”0.9479166666666666in”}</p>
-<h4 id="学生选课表的准备"><a href="#学生选课表的准备" class="headerlink" title="学生选课表的准备"></a>学生选课表的准备</h4><p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image33.png" alt>{width=”3.0729166666666665in” height=”4.125in”}</p>
+<h2 id="多表查询之数据准备"><a href="#多表查询之数据准备" class="headerlink" title="多表查询之数据准备"></a>多表查询之数据准备</h2><h3 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h3><h4 id="班级表数据的准备"><a href="#班级表数据的准备" class="headerlink" title="班级表数据的准备"></a>班级表数据的准备</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image30.png" alt>{width=”2.7291666666666665in” height=”1.1458333333333333in”}</p>
+<h4 id="学生表数据的准备"><a href="#学生表数据的准备" class="headerlink" title="学生表数据的准备"></a>学生表数据的准备</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image31.png" alt>{width=”3.9375in” height=”2.0729166666666665in”}</p>
+<h4 id="课程表数据的准备"><a href="#课程表数据的准备" class="headerlink" title="课程表数据的准备"></a>课程表数据的准备</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image32.png" alt>{width=”1.6770833333333333in” height=”0.9479166666666666in”}</p>
+<h4 id="学生选课表的准备"><a href="#学生选课表的准备" class="headerlink" title="学生选课表的准备"></a>学生选课表的准备</h4><p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image33.png" alt>{width=”3.0729166666666665in” height=”4.125in”}</p>
 <ol>
 <li><h2 id="多表查询之交叉连接"><a href="#多表查询之交叉连接" class="headerlink" title="多表查询之交叉连接"></a>多表查询之交叉连接</h2><ol>
 <li><h3 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h3><ol>
@@ -791,9 +820,9 @@
 </li>
 </ol>
 <p>select * from classes c inner join student s on c.cid = s.cno;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image34.png" alt>{width=”5.768055555555556in” height=”1.492361111111111in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image34.png" alt>{width=”5.768055555555556in” height=”1.492361111111111in”}</p>
 <h4 id="隐式内连接"><a href="#隐式内连接" class="headerlink" title="隐式内连接"></a>隐式内连接</h4><p>SELECT * FROM classes c,student s WHERE c.cid = s.cno;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image35.png" alt>{width=”5.768055555555556in” height=”1.5118055555555556in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image35.png" alt>{width=”5.768055555555556in” height=”1.5118055555555556in”}</p>
 <ol>
 <li><h2 id="多表查询之外连接"><a href="#多表查询之外连接" class="headerlink" title="多表查询之外连接"></a>多表查询之外连接</h2><ol>
 <li><h3 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h3><ol>
@@ -804,55 +833,55 @@
 </li>
 </ol>
 <p>SELECT * FROM classes c LEFT OUTER JOIN student s ON c.cid = s.cno;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image36.png" alt>{width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image36.png" alt>{width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
 <h4 id="右外连接"><a href="#右外连接" class="headerlink" title="右外连接"></a>右外连接</h4><p>select * from classes c right outer join student s on c.cid = s.cno;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image37.png" alt>{width=”5.768055555555556in” height=”1.6222222222222222in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image37.png" alt>{width=”5.768055555555556in” height=”1.6222222222222222in”}</p>
 <ol>
 <li><h2 id="多表查询之内连接与外连接的区别"><a href="#多表查询之内连接与外连接的区别" class="headerlink" title="多表查询之内连接与外连接的区别"></a>多表查询之内连接与外连接的区别</h2><ol>
 <li><h3 id="内连接和外连接的区别"><a href="#内连接和外连接的区别" class="headerlink" title="内连接和外连接的区别"></a>内连接和外连接的区别</h3></li>
 </ol>
 </li>
 </ol>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image38.png" alt>{width=”5.768055555555556in” height=”2.963888888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image38.png" alt>{width=”5.768055555555556in” height=”2.963888888888889in”}</p>
 <h2 id="多表查询之子查询"><a href="#多表查询之子查询" class="headerlink" title="多表查询之子查询"></a>多表查询之子查询</h2><h3 id="子查询-1"><a href="#子查询-1" class="headerlink" title="子查询"></a>子查询</h3><h4 id="带in的子查询"><a href="#带in的子查询" class="headerlink" title="带in的子查询"></a>带in的子查询</h4><ul>
 <li>查询学生生日在91年之后的班级的信息。</li>
 </ul>
 <p>select * from classes where cid in (SELECT cno FROM student WHERE birthday &gt; &#39;1991-01-01&#39;);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image39.png" alt>{width=”2.7083333333333335in” height=”0.59375in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image39.png" alt>{width=”2.7083333333333335in” height=”0.59375in”}</p>
 <h4 id="带exists的子查询"><a href="#带exists的子查询" class="headerlink" title="带exists的子查询"></a>带exists的子查询</h4><ul>
 <li>查询学生生日大于91年1月1日，如果记录存在，前面的SQL语句就会执行</li>
 </ul>
 <p>select * from classes where exists (SELECT cno FROM student WHERE birthday &gt; &#39;1991-01-01&#39;);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image40.png" alt>{width=”2.6875in” height=”0.9479166666666666in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image40.png" alt>{width=”2.6875in” height=”0.9479166666666666in”}</p>
 <h4 id="带any的子查询"><a href="#带any的子查询" class="headerlink" title="带any的子查询"></a>带any的子查询</h4><p>SELECT * FROM classes WHERE cid &gt; ANY (SELECT cno FROM student )</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image41.png" alt>{width=”2.6666666666666665in” height=”0.7604166666666666in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image41.png" alt>{width=”2.6666666666666665in” height=”0.7604166666666666in”}</p>
 <h4 id="带all的子查询"><a href="#带all的子查询" class="headerlink" title="带all的子查询"></a>带all的子查询</h4><p>SELECT * FROM classes WHERE cid &gt; ALL (SELECT cno FROM student)</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image42.png" alt>{width=”2.6979166666666665in” height=”0.4479166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image42.png" alt>{width=”2.6979166666666665in” height=”0.4479166666666667in”}</p>
 <h2 id="多表查询之练习"><a href="#多表查询之练习" class="headerlink" title="多表查询之练习"></a>多表查询之练习</h2><h3 id="多表查询的练习"><a href="#多表查询的练习" class="headerlink" title="多表查询的练习"></a>多表查询的练习</h3><ul>
 <li>查询班级名称，和班级总人数</li>
 </ul>
 <p>SELECT c.cname,COUNT(*) FROM classes c,student s WHERE c.cid = s.cno GROUP BY c.cname;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image43.png" alt>{width=”1.8020833333333333in” height=”0.78125in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image43.png" alt>{width=”1.8020833333333333in” height=”0.78125in”}</p>
 <ul>
 <li>查询学生的姓名和学生所选的总课程平均成绩。</li>
 </ul>
 <p>select s.sname,avg(sc.score) from student s,stu_cour sc where s.sid = sc.sno group by s.sname;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image44.png" alt>{width=”2.3229166666666665in” height=”1.8958333333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image44.png" alt>{width=”2.3229166666666665in” height=”1.8958333333333333in”}</p>
 <ul>
 <li>查询学生的姓名和学生的选课总数，显示选课超过2门学生姓名。</li>
 </ul>
 <p>select s.sname,count(*) from student s,stu_cour sc where s.sid = sc.sno group by s.sname having count(*) &gt; 2;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image45.png" alt>{width=”1.8229166666666667in” height=”0.5520833333333334in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image45.png" alt>{width=”1.8229166666666667in” height=”0.5520833333333334in”}</p>
 <ul>
 <li>查询平均成绩大于80分的学生的总数。</li>
 </ul>
 <p>select count(*) from student s where s.sid in (SELECT sc.sno FROM stu_cour sc GROUP BY sc.sno HAVING AVG(sc.score) &gt; 80);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image46.png" alt>{width=”1.1041666666666667in” height=”0.3645833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image46.png" alt>{width=”1.1041666666666667in” height=”0.3645833333333333in”}</p>
 <ul>
 <li>查询学生和平均成绩，但是平均成绩大于01班的任何一个学生的评价成绩。</li>
 </ul>
 <p>SELECT s.sname,AVG(sc.score) FROM student s,stu_cour sc WHERE s.sid = sc.sno GROUP BY s.sname HAVING AVG(sc.score) &gt; ANY(SELECT AVG(sc.score) FROM student s,stu_cour sc,classes c WHERE s.sid = sc.sno AND s.cno = c.cname AND c.cname =&#39;01班&#39; GROUP BY s.sname);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image47.png" alt>{width=”2.34375in” height=”1.3645833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image47.png" alt>{width=”2.34375in” height=”1.3645833333333333in”}</p>
 <h2 id="事务的概述"><a href="#事务的概述" class="headerlink" title="事务的概述"></a>事务的概述</h2><h3 id="事务的概念"><a href="#事务的概念" class="headerlink" title="事务的概念"></a>事务的概念</h3><p>事务：指的是逻辑上的一组操作，组成这组操作的各个逻辑单元，要么全都成功，要么全都失败。</p>
 <h3 id="MySQL中的事务管理"><a href="#MySQL中的事务管理" class="headerlink" title="MySQL中的事务管理"></a>MySQL中的事务管理</h3><h4 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h4><p>create table account(</p>
 <p>id int primary key auto_increment,</p>
@@ -876,13 +905,13 @@
 <ul>
 <li>提交事务</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image48.png" alt>{width=”5.768055555555556in” height=”1.8222222222222222in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image48.png" alt>{width=”5.768055555555556in” height=”1.8222222222222222in”}</p>
 <p>update account set money=money+1000 where name=&#39;小张&#39;;</p>
 <p>update account set money=money-1000 where name=&#39;小风&#39;;</p>
 <ul>
 <li>回滚事务</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image49.png" alt>{width=”5.768055555555556in” height=”3.0541666666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image49.png" alt>{width=”5.768055555555556in” height=”3.0541666666666667in”}</p>
 <h3 id="事务的特性："><a href="#事务的特性：" class="headerlink" title="事务的特性："></a>事务的特性：</h3><h4 id="原子性"><a href="#原子性" class="headerlink" title="原子性"></a>原子性</h4><p>原子性：事务的不可分割，组成事务的各个逻辑单元不可分割。</p>
 <h4 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h4><p>一致性：事务执行的前后，数据完整性保持一致。</p>
 <h4 id="隔离性"><a href="#隔离性" class="headerlink" title="隔离性"></a>隔离性</h4><p>隔离性：事务执行不应该受到其他事务的干扰。</p>
@@ -915,7 +944,7 @@
 </li>
 </ul>
 <p>SET SESSION TRANSACTION ISOLATION LEVEL read uncommitted;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image50.png" alt>{width=”5.5in” height=”1.8in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image50.png" alt>{width=”5.5in” height=”1.8in”}</p>
 <ul>
 <li>在A，B两个窗口中开启事务</li>
 </ul>
@@ -926,12 +955,12 @@
 <p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
 <p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
 <p><strong>***** 事务未提交!!!</strong></p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image51.png" alt>{width=”5.768055555555556in” height=”1.8263888888888888in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image51.png" alt>{width=”5.768055555555556in” height=”1.8263888888888888in”}</p>
 <ul>
 <li>在A窗口中进行查询</li>
 </ul>
 <p>select * from account;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image52.png" alt>{width=”3.4in” height=”1.4in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image52.png" alt>{width=”3.4in” height=”1.4in”}</p>
 <p><strong>*****发现A窗口中已经查询到转账成功了！！！已经发生了脏读：一个事务中已经读到了另一个事务未提交的数据。</strong></p>
 <h2 id="事务的隔离级别演示"><a href="#事务的隔离级别演示" class="headerlink" title="事务的隔离级别演示"></a>事务的隔离级别演示</h2><h3 id="避免脏读，演示不可重复读发生"><a href="#避免脏读，演示不可重复读发生" class="headerlink" title="避免脏读，演示不可重复读发生"></a>避免脏读，演示不可重复读发生</h3><ul>
 <li><p>开启两个窗口A,B</p>
@@ -940,7 +969,7 @@
 </li>
 </ul>
 <p>SET SESSION TRANSACTION ISOLATION LEVEL read committed;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image53.png" alt>{width=”5.291666666666667in” height=”1.78125in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image53.png" alt>{width=”5.291666666666667in” height=”1.78125in”}</p>
 <ul>
 <li>分别在两个窗口中开启事务：</li>
 </ul>
@@ -950,13 +979,13 @@
 </ul>
 <p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
 <p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image54.png" alt>{width=”5.768055555555556in” height=”1.707638888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image54.png" alt>{width=”5.768055555555556in” height=”1.707638888888889in”}</p>
 <p><strong>***** 没有提交事务！！！</strong></p>
 <ul>
 <li>在A窗口中进行查询：</li>
 </ul>
 <p>select * from account;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image55.png" alt>{width=”3.21875in” height=”1.3854166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image55.png" alt>{width=”3.21875in” height=”1.3854166666666667in”}</p>
 <p><strong>***** 发现这个时候没有转账成功！！！（没有查询到另一个事务未提交的数据：说明已经避免了脏读）。</strong></p>
 <ul>
 <li><strong>在B窗口中提交事务</strong></li>
@@ -966,7 +995,7 @@
 <li>在A窗口查询</li>
 </ul>
 <p>select * from account;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image56.png" alt>{width=”3.4895833333333335in” height=”3.4479166666666665in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image56.png" alt>{width=”3.4895833333333335in” height=”3.4479166666666665in”}</p>
 <p><strong>***** 发现这次的结果已经发生了变化！！！（已经发生不可重复读：一个事务已经读到了另一个事务提交的update的数据，导致多次查询结果不一致。）</strong></p>
 <h2 id="事务的隔离级别的演示-1"><a href="#事务的隔离级别的演示-1" class="headerlink" title="事务的隔离级别的演示"></a>事务的隔离级别的演示</h2><h3 id="演示避免不可重复读"><a href="#演示避免不可重复读" class="headerlink" title="演示避免不可重复读"></a>演示避免不可重复读</h3><ul>
 <li><p>分别开启两个窗口A，B</p>
@@ -975,7 +1004,7 @@
 </li>
 </ul>
 <p>SET SESSION TRANSACTION ISOLATION LEVEL repeatable read;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image57.png" alt>{width=”5.604166666666667in” height=”1.7708333333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image57.png" alt>{width=”5.604166666666667in” height=”1.7708333333333333in”}</p>
 <ul>
 <li>在A，B两个窗口中开启事务:</li>
 </ul>
@@ -985,7 +1014,7 @@
 </ul>
 <p>update account set money = money - 1000 where name= &#39;小张&#39;;</p>
 <p>update account set money = money + 1000 where name= &#39;小凤&#39;;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image58.png" alt>{width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image58.png" alt>{width=”5.768055555555556in” height=”1.6319444444444444in”}</p>
 <p><strong>***** 未提交事务！！！</strong></p>
 <ul>
 <li><strong>在A窗口中进行查询</strong></li>
@@ -999,7 +1028,7 @@
 <ul>
 <li>在A窗口中再次查询：</li>
 </ul>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image59.png" alt>{width=”4.135416666666667in” height=”3.40625in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image59.png" alt>{width=”4.135416666666667in” height=”3.40625in”}</p>
 <p><strong>***** 发现在一个事务中的多次查询结果是一致！！！（已经避免不可重复读）。</strong></p>
 <h2 id="事务的隔离级别演示-1"><a href="#事务的隔离级别演示-1" class="headerlink" title="事务的隔离级别演示"></a>事务的隔离级别演示</h2><h3 id="演示串行化"><a href="#演示串行化" class="headerlink" title="演示串行化"></a>演示串行化</h3><ul>
 <li><p>开启两个窗口A,B</p>
@@ -1008,17 +1037,17 @@
 </li>
 </ul>
 <p>SET SESSION TRANSACTION ISOLATION LEVEL serializable;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image60.png" alt>{width=”5.583333333333333in” height=”1.7395833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image60.png" alt>{width=”5.583333333333333in” height=”1.7395833333333333in”}</p>
 <ul>
 <li>分别在两个窗口中开启事务：</li>
 </ul>
 <p>start transaction;</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image61.png" alt>{width=”3.4270833333333335in” height=”0.4270833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image61.png" alt>{width=”3.4270833333333335in” height=”0.4270833333333333in”}</p>
 <ul>
 <li>在B窗口中插入一条记录</li>
 </ul>
 <p>insert into account values (null,&#39;小李&#39;,10000);</p>
-<p><img src="./%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E5%92%8C%E4%BA%8B%E5%8A%A1/image62.png" alt>{width=”4.6875in” height=”0.4895833333333333in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/11/多表查询和事务/image62.png" alt>{width=”4.6875in” height=”0.4895833333333333in”}</p>
 <ul>
 <li>在A窗口中进行查询</li>
 </ul>
@@ -1161,7 +1190,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="什么是JDBC"><a href="#什么是JDBC" class="headerlink" title="什么是JDBC"></a>什么是JDBC</h3><p><img src=".%5Cjdbc/image1.png" alt>{width=”5.768055555555556in” height=”0.9111111111111111in”}</p>
+        <h3 id="什么是JDBC"><a href="#什么是JDBC" class="headerlink" title="什么是JDBC"></a>什么是JDBC</h3><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image1.png" alt>{width=”5.768055555555556in” height=”0.9111111111111111in”}</p>
 <h3 id="什么是数据库驱动"><a href="#什么是数据库驱动" class="headerlink" title="什么是数据库驱动"></a>什么是数据库驱动</h3><ul>
 <li>驱动：两个设备（应用）之间通信的桥梁。</li>
 </ul>
@@ -1180,7 +1209,7 @@
 <p>insert into user values (null,&#39;bbb&#39;,&#39;123&#39;,&#39;大王&#39;,32);</p>
 <p>insert into user values (null,&#39;ccc&#39;,&#39;123&#39;,&#39;小明&#39;,28);</p>
 <p>insert into user values (null,&#39;ddd&#39;,&#39;123&#39;,&#39;大黄&#39;,21);</p>
-<h4 id="创建项目，引入jar包"><a href="#创建项目，引入jar包" class="headerlink" title="创建项目，引入jar包"></a>创建项目，引入jar包</h4><p><img src=".%5Cjdbc/image2.png" alt>{width=”3.1770833333333335in” height=”1.6041666666666667in”}</p>
+<h4 id="创建项目，引入jar包"><a href="#创建项目，引入jar包" class="headerlink" title="创建项目，引入jar包"></a>创建项目，引入jar包</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image2.png" alt>{width=”3.1770833333333335in” height=”1.6041666666666667in”}</p>
 <h3 id="JDBC的代码实现"><a href="#JDBC的代码实现" class="headerlink" title="JDBC的代码实现"></a>JDBC的代码实现</h3><h4 id="JDBC的开发步骤"><a href="#JDBC的开发步骤" class="headerlink" title="JDBC的开发步骤"></a>JDBC的开发步骤</h4><ul>
 <li><p>第一步：加载驱动</p>
 </li>
@@ -1232,16 +1261,16 @@
 <p>conn.close();</p>
 <p>}</p>
 <p>}</p>
-<h2 id="JDBC的API详解之DriverManager"><a href="#JDBC的API详解之DriverManager" class="headerlink" title="JDBC的API详解之DriverManager"></a>JDBC的API详解之DriverManager</h2><h3 id="DriverManager：驱动管理类"><a href="#DriverManager：驱动管理类" class="headerlink" title="DriverManager：驱动管理类"></a>DriverManager：驱动管理类</h3><h4 id="作用一：注册驱动"><a href="#作用一：注册驱动" class="headerlink" title="作用一：注册驱动"></a>作用一：注册驱动</h4><p><img src=".%5Cjdbc/image3.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
+<h2 id="JDBC的API详解之DriverManager"><a href="#JDBC的API详解之DriverManager" class="headerlink" title="JDBC的API详解之DriverManager"></a>JDBC的API详解之DriverManager</h2><h3 id="DriverManager：驱动管理类"><a href="#DriverManager：驱动管理类" class="headerlink" title="DriverManager：驱动管理类"></a>DriverManager：驱动管理类</h3><h4 id="作用一：注册驱动"><a href="#作用一：注册驱动" class="headerlink" title="作用一：注册驱动"></a>作用一：注册驱动</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image3.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
 <p><strong>这个方法可以完成驱动的注册，但是实际开发中一般不会使用这个方法完成驱动的注册！！！</strong></p>
 <p><strong>原因：</strong></p>
 <p><strong>如果需要注册驱动，就会使用DriverManager.registerDriver(new Driver());，但是查看源代码发现，在代码中有一段静态代码块，静态代码块已经调用了注册驱动的方法。</strong></p>
-<p><img src=".%5Cjdbc/image4.png" alt>{width=”5.768055555555556in” height=”2.2534722222222223in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image4.png" alt>{width=”5.768055555555556in” height=”2.2534722222222223in”}</p>
 <ul>
 <li><strong>如果再手动调用该方法注册驱动，就会导致驱动被注册两次。实际开发中一般会采用：</strong></li>
 </ul>
-<p><img src=".%5Cjdbc/image5.png" alt>{width=”4.427083333333333in” height=”0.5208333333333334in”}</p>
-<h4 id="作用二：获得连接"><a href="#作用二：获得连接" class="headerlink" title="作用二：获得连接"></a>作用二：获得连接</h4><p><img src=".%5Cjdbc/image6.png" alt>{width=”5.768055555555556in” height=”0.24027777777777778in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image5.png" alt>{width=”4.427083333333333in” height=”0.5208333333333334in”}</p>
+<h4 id="作用二：获得连接"><a href="#作用二：获得连接" class="headerlink" title="作用二：获得连接"></a>作用二：获得连接</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image6.png" alt>{width=”5.768055555555556in” height=”0.24027777777777778in”}</p>
 <p>这个方法就是用来获得与数据库连接的方法：这个方法中有三个参数：</p>
 <ul>
 <li><p>url ：与数据库连接的路径</p>
@@ -1267,9 +1296,9 @@
 </ul>
 <p>url如果连接的是本机的路径，可以简化为如下格式：</p>
 <p>jdbc:mysql:///web_test3</p>
-<h2 id="JDBC的API详解之Connection"><a href="#JDBC的API详解之Connection" class="headerlink" title="JDBC的API详解之Connection"></a>JDBC的API详解之Connection</h2><h3 id="Connection：与数据库连接对象"><a href="#Connection：与数据库连接对象" class="headerlink" title="Connection：与数据库连接对象"></a>Connection：与数据库连接对象</h3><h4 id="作用一：创建执行SQL语句的对象"><a href="#作用一：创建执行SQL语句的对象" class="headerlink" title="作用一：创建执行SQL语句的对象"></a>作用一：创建执行SQL语句的对象</h4><p><img src=".%5Cjdbc/image7.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
-<p><img src=".%5Cjdbc/image8.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
-<p><img src=".%5Cjdbc/image9.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<h2 id="JDBC的API详解之Connection"><a href="#JDBC的API详解之Connection" class="headerlink" title="JDBC的API详解之Connection"></a>JDBC的API详解之Connection</h2><h3 id="Connection：与数据库连接对象"><a href="#Connection：与数据库连接对象" class="headerlink" title="Connection：与数据库连接对象"></a>Connection：与数据库连接对象</h3><h4 id="作用一：创建执行SQL语句的对象"><a href="#作用一：创建执行SQL语句的对象" class="headerlink" title="作用一：创建执行SQL语句的对象"></a>作用一：创建执行SQL语句的对象</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image7.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image8.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image9.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
 <p>执行SQL语句对象:</p>
 <ul>
 <li><p>Statement :执行SQL</p>
@@ -1282,12 +1311,12 @@
 </ol>
 </li>
 </ul>
-<p><img src=".%5Cjdbc/image10.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
-<p><img src=".%5Cjdbc/image11.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
-<p><img src=".%5Cjdbc/image12.png" alt>{width=”5.768055555555556in” height=”0.28055555555555556in”}</p>
-<h2 id="JDBC的API详解之Statement"><a href="#JDBC的API详解之Statement" class="headerlink" title="JDBC的API详解之Statement"></a>JDBC的API详解之Statement</h2><h3 id="Statement：执行SQL"><a href="#Statement：执行SQL" class="headerlink" title="Statement：执行SQL"></a>Statement：执行SQL</h3><h4 id="作用一：执行SQL"><a href="#作用一：执行SQL" class="headerlink" title="作用一：执行SQL"></a>作用一：执行SQL</h4><p><img src=".%5Cjdbc/image13.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
-<p><img src=".%5Cjdbc/image14.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
-<p><img src=".%5Cjdbc/image15.png" alt>{width=”5.768055555555556in” height=”0.25069444444444444in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image10.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image11.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image12.png" alt>{width=”5.768055555555556in” height=”0.28055555555555556in”}</p>
+<h2 id="JDBC的API详解之Statement"><a href="#JDBC的API详解之Statement" class="headerlink" title="JDBC的API详解之Statement"></a>JDBC的API详解之Statement</h2><h3 id="Statement：执行SQL"><a href="#Statement：执行SQL" class="headerlink" title="Statement：执行SQL"></a>Statement：执行SQL</h3><h4 id="作用一：执行SQL"><a href="#作用一：执行SQL" class="headerlink" title="作用一：执行SQL"></a>作用一：执行SQL</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image13.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image14.png" alt>{width=”5.768055555555556in” height=”0.2604166666666667in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image15.png" alt>{width=”5.768055555555556in” height=”0.25069444444444444in”}</p>
 <ul>
 <li><p>执行SQL的方法</p>
 <ul>
@@ -1313,21 +1342,21 @@
 </ul>
 </li>
 </ul>
-<p><img src=".%5Cjdbc/image16.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
-<p><img src=".%5Cjdbc/image17.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
-<p><img src=".%5Cjdbc/image18.png" alt>{width=”5.768055555555556in” height=”0.25972222222222224in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image16.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image17.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image18.png" alt>{width=”5.768055555555556in” height=”0.25972222222222224in”}</p>
 <h2 id="JDBC的API详解之ResultSet"><a href="#JDBC的API详解之ResultSet" class="headerlink" title="JDBC的API详解之ResultSet"></a>JDBC的API详解之ResultSet</h2><h3 id="ResultSet：结果集。"><a href="#ResultSet：结果集。" class="headerlink" title="ResultSet：结果集。"></a>ResultSet：结果集。</h3><p>通过select语句的查询结果。</p>
-<h4 id="结果集的遍历"><a href="#结果集的遍历" class="headerlink" title="结果集的遍历"></a>结果集的遍历</h4><p><img src=".%5Cjdbc/image19.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
+<h4 id="结果集的遍历"><a href="#结果集的遍历" class="headerlink" title="结果集的遍历"></a>结果集的遍历</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image19.png" alt>{width=”5.768055555555556in” height=”0.2701388888888889in”}</p>
 <ul>
 <li>结果集遍历原理</li>
 </ul>
-<p><img src=".%5Cjdbc/image20.png" alt>{width=”5.768055555555556in” height=”1.6722222222222223in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image20.png" alt>{width=”5.768055555555556in” height=”1.6722222222222223in”}</p>
 <ul>
 <li>代码实现</li>
 </ul>
-<p><img src=".%5Cjdbc/image21.png" alt>{width=”5.552083333333333in” height=”2.09375in”}</p>
-<h4 id="结果集的获取"><a href="#结果集的获取" class="headerlink" title="结果集的获取"></a>结果集的获取</h4><p><img src=".%5Cjdbc/image22.png" alt>{width=”5.768055555555556in” height=”1.03125in”}</p>
-<p><img src=".%5Cjdbc/image23.png" alt>{width=”5.768055555555556in” height=”0.5305555555555556in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image21.png" alt>{width=”5.552083333333333in” height=”2.09375in”}</p>
+<h4 id="结果集的获取"><a href="#结果集的获取" class="headerlink" title="结果集的获取"></a>结果集的获取</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image22.png" alt>{width=”5.768055555555556in” height=”1.03125in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image23.png" alt>{width=”5.768055555555556in” height=”0.5305555555555556in”}</p>
 <ul>
 <li>结果集获取可以使用结果集中的:</li>
 </ul>
@@ -1772,13 +1801,13 @@
 <h3 id="提取信息到配置文件"><a href="#提取信息到配置文件" class="headerlink" title="提取信息到配置文件"></a>提取信息到配置文件</h3><ul>
 <li>定义一个配置文件</li>
 </ul>
-<p><img src=".%5Cjdbc/image24.png" alt>{width=”4.4375in” height=”1.1875in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image24.png" alt>{width=”4.4375in” height=”1.1875in”}</p>
 <h3 id="在工具类中解析属性文件"><a href="#在工具类中解析属性文件" class="headerlink" title="在工具类中解析属性文件"></a>在工具类中解析属性文件</h3><ul>
 <li>获取到具体内容为常量赋值</li>
 </ul>
-<p><img src=".%5Cjdbc/image25.png" alt>{width=”5.768055555555556in” height=”2.713888888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image25.png" alt>{width=”5.768055555555556in” height=”2.713888888888889in”}</p>
 <h2 id="JDBC的SQL注入漏洞"><a href="#JDBC的SQL注入漏洞" class="headerlink" title="JDBC的SQL注入漏洞"></a>JDBC的SQL注入漏洞</h2><h3 id="什么是SQL注入漏洞"><a href="#什么是SQL注入漏洞" class="headerlink" title="什么是SQL注入漏洞"></a>什么是SQL注入漏洞</h3><p>在早期互联网上SQL注入漏洞普遍存在。有一个网站，用户需要进行注册，用户注册以后根据用户名和密码完成登录。假设现在用户名已经被其他人知道了，但是其他人不知道你的密码，也可以登录到网站上进行相应的操作。</p>
-<h3 id="演示SQL注入漏洞"><a href="#演示SQL注入漏洞" class="headerlink" title="演示SQL注入漏洞"></a>演示SQL注入漏洞</h3><h4 id="基本登录功能实现"><a href="#基本登录功能实现" class="headerlink" title="基本登录功能实现"></a>基本登录功能实现</h4><p><img src=".%5Cjdbc/image26.png" alt>{width=”5.768055555555556in” height=”5.3180555555555555in”}</p>
+<h3 id="演示SQL注入漏洞"><a href="#演示SQL注入漏洞" class="headerlink" title="演示SQL注入漏洞"></a>演示SQL注入漏洞</h3><h4 id="基本登录功能实现"><a href="#基本登录功能实现" class="headerlink" title="基本登录功能实现"></a>基本登录功能实现</h4><p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image26.png" alt>{width=”5.768055555555556in” height=”5.3180555555555555in”}</p>
 <h4 id="演示SQL注入漏洞-1"><a href="#演示SQL注入漏洞-1" class="headerlink" title="演示SQL注入漏洞"></a>演示SQL注入漏洞</h4><ul>
 <li><p>输入用户名</p>
 <ul>
@@ -1789,14 +1818,14 @@
 </ul>
 </li>
 </ul>
-<p><img src=".%5Cjdbc/image27.png" alt>{width=”5.768055555555556in” height=”3.745138888888889in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image27.png" alt>{width=”5.768055555555556in” height=”3.745138888888889in”}</p>
 <ol>
 <li><h2 id="JDBC的SQL注入漏洞分析和解决"><a href="#JDBC的SQL注入漏洞分析和解决" class="headerlink" title="JDBC的SQL注入漏洞分析和解决"></a>JDBC的SQL注入漏洞分析和解决</h2><ol>
 <li><h3 id="SQL注入漏洞分析"><a href="#SQL注入漏洞分析" class="headerlink" title="SQL注入漏洞分析"></a>SQL注入漏洞分析</h3></li>
 </ol>
 </li>
 </ol>
-<p><img src=".%5Cjdbc/image28.png" alt>{width=”5.768055555555556in” height=”2.0791666666666666in”}</p>
+<p><img src="//chenhuibai.github.io/2019/06/10/JDBC/image28.png" alt>{width=”5.768055555555556in” height=”2.0791666666666666in”}</p>
 <h3 id="SQL注入漏洞解决"><a href="#SQL注入漏洞解决" class="headerlink" title="SQL注入漏洞解决"></a>SQL注入漏洞解决</h3><p>需要采用PreparedStatement对象解决SQL注入漏洞。这个对象将SQL预先进行编译，使用?作为占位符。?所代表内容是SQL所固定。再次传入变量（包含SQL的关键字）。这个时候也不会识别这些关键字。</p>
 <p><strong>public</strong> <strong>class</strong> UserDao {</p>
 <p><strong>public</strong> <strong>boolean</strong> login(String username,String password){</p>
